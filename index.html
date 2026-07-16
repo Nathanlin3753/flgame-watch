@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>童話金銀商場儀表板</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { margin-top: 0; color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 15px; }
+        .meta-info { font-size: 0.9em; color: #7f8c8d; margin-bottom: 20px; }
+        .filter-section { background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; border: 1px solid #e2e8f0; align-items: center; }
+        .filter-group { display: flex; flex-direction: column; }
+        .filter-group label { font-size: 0.85em; font-weight: bold; color: #4a5568; margin-bottom: 5px; }
+        .filter-group input[type="text"], .filter-group input[type="number"] { padding: 8px 12px; border: 1px solid #cbd5e0; border-radius: 6px; font-size: 0.9em; outline: none; }
+        .filter-group input:focus { border-color: #3182ce; box-shadow: 0 0 0 3px rgba(66,153,225,0.5); }
+        
+        /* Checkbox 樣式 */
+        .checkbox-group { display: flex; align-items: center; height: 100%; padding-top: 15px; }
+        .checkbox-group label { display: flex; align-items: center; font-size: 0.9em; font-weight: bold; color: #2d3748; cursor: pointer; user-select: none; }
+        .checkbox-group input { width: 18px; height: 18px; margin-right: 8px; cursor: pointer; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; text-align: left; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #e2e8f0; }
+        th { background-color: #edf2f7; color: #2d3748; font-weight: bold; }
+        tr:hover { background-color: #f7fafc; }
+        .badge { background: #e2e8f0; padding: 3px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
+        .badge-attr { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+        .highlight { background-color: #fffaf0; }
+        
+        /* 亮點樣式 */
+        .badge-new { background: #f56565; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.75em; margin-left: 8px; font-weight: bold; display: inline-block; vertical-align: middle; animation: pulse 2s infinite; }
+        .price-drop { color: #48bb78; font-size: 0.8em; font-weight: bold; margin-top: 2px; }
+        .price-stat { font-size: 0.75em; color: #718096; margin-top: 2px; }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); background-color: #e53e3e; }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>童話金銀商場儀表板</h1>
+        <div class="meta-info">
+            資料更新時間: 2026-07-16 15:52 | 本地抓取時間: 2026-07-16 17:08:32 | 商品總數: 50
+        </div>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <label for="searchName">物品名稱關鍵字</label>
+                <input type="text" id="searchName" placeholder="例如: 颶風斧" oninput="filterData()">
+            </div>
+            <div class="filter-group">
+                <label for="searchAttr">裝備屬性篩選</label>
+                <input type="text" id="searchAttr" placeholder="例如: 力量" oninput="filterData()">
+            </div>
+            <div class="filter-group">
+                <label for="minAttrValue">屬性數值大於或等於 (>=)</label>
+                <input type="number" id="minAttrValue" value="0" min="0" oninput="filterData()">
+            </div>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="onlyNew" onchange="filterData()"> 只看全新上架 (NEW)
+                </label>
+            </div>
+        </div>
+
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>物品名稱</th>
+                        <th>屬性/精鍊 (Attrs)</th>
+                        <th>價格</th>
+                        <th>數量</th>
+                        <th>攤位名稱</th>
+                        <th>座標位置</th>
+                        <th>分類</th>
+                    </tr>
+                </thead>
+                <tbody id="itemTableBody">
+                    <!-- JS 渲染位置 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const rawData = [{"Fingerprint":"精煉的有洞米拉戰靴|裝備|等級 50 重量 70 防率 47 防禦 121 耐久 1076/1076 幸運 44 金抗 565 水抗 541 光抗 583|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞米拉戰靴","Category":"裝備","Attrs":"等級 50 重量 70 防率 47 防禦 121 耐久 1076/1076 幸運 44 金抗 565 水抗 541 光抗 583","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞神祕指環|裝備|等級 40 重量 10 耐久 1372/1372 幸運 43 木抗 597 水抗 528 光抗 540|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞神祕指環","Category":"裝備","Attrs":"等級 40 重量 10 耐久 1372/1372 幸運 43 木抗 597 水抗 528 光抗 540","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞晶石盾|裝備|等級 50 重量 150 防率 78 防禦 0 耐久 1316/1316 敏捷 35 幸運 44 SP 734 光抗 596|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞晶石盾","Category":"裝備","Attrs":"等級 50 重量 150 防率 78 防禦 0 耐久 1316/1316 敏捷 35 幸運 44 SP 734 光抗 596","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞龍牙護手|裝備|等級 65 重量 70 防率 70 防禦 138 耐久 1457/1457 幸運 42 木抗 531 水抗 584 暗抗 573|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞龍牙護手","Category":"裝備","Attrs":"等級 65 重量 70 防率 70 防禦 138 耐久 1457/1457 幸運 42 木抗 531 水抗 584 暗抗 573","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞避邪羽冠|裝備|等級 40 重量 30 防率 33 防禦 169 耐久 1018/1018 幸運 42 HP 737 SP 703 暗抗 555|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞避邪羽冠","Category":"裝備","Attrs":"等級 40 重量 30 防率 33 防禦 169 耐久 1018/1018 幸運 42 HP 737 SP 703 暗抗 555","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞惡魔護符|裝備|等級 50 重量 25 耐久 1013/1013 體質 35 幸運 44 木抗 580 光抗 575|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞惡魔護符","Category":"裝備","Attrs":"等級 50 重量 25 耐久 1013/1013 體質 35 幸運 44 木抗 580 光抗 575","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞金龍戎裝|裝備|等級 70 重量 110 防率 320 防禦 765 耐久 1291/1291 幸運 43 SP 786 木抗 568 水抗 563|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞金龍戎裝","Category":"裝備","Attrs":"等級 70 重量 110 防率 320 防禦 765 耐久 1291/1291 幸運 43 SP 786 木抗 568 水抗 563","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞希望法袍|裝備|等級 40 重量 50 防率 116 防禦 568 耐久 1268/1268 智慧 35 幸運 43 火抗 561 光抗 589|1|500,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞希望法袍","Category":"裝備","Attrs":"等級 40 重量 50 防率 116 防禦 568 耐久 1268/1268 智慧 35 幸運 43 火抗 561 光抗 589","Qty":"1","Price":"500,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精巧的王者之劍|裝備|等級 70 重量 180 命中 448 傷害 675 耐久 868/868 智慧 18 體質 15|1|22,000,000|沒有名字的路邊|9, 82","Name":"精巧的王者之劍","Category":"裝備","Attrs":"等級 70 重量 180 命中 448 傷害 675 耐久 868/868 智慧 18 體質 15","Qty":"1","Price":"22,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精巧的菲洛爾神劍|裝備|等級 70 重量 200 命中 607 傷害 709 耐久 859/859 體質 17 HP 513|1|28,000,000|沒有名字的路邊|9, 82","Name":"精巧的菲洛爾神劍","Category":"裝備","Attrs":"等級 70 重量 200 命中 607 傷害 709 耐久 859/859 體質 17 HP 513","Qty":"1","Price":"28,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":true,"OldPrice":40000000,"PriceDiff":12000000,"PrevTime":"2026-07-16 16:56:26"},{"Fingerprint":"精巧的菲洛爾神劍|裝備|等級 70 重量 200 命中 598 傷害 742 耐久 943/943 力量 21 體質 17|1|40,000,000|沒有名字的路邊|9, 82","Name":"精巧的菲洛爾神劍","Category":"裝備","Attrs":"等級 70 重量 200 命中 598 傷害 742 耐久 943/943 力量 21 體質 17","Qty":"1","Price":"40,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的克拉芙神劍|裝備|等級 90 重量 200 命中 652 傷害 838 耐久 1062/1062 力量 31 敏捷 24|1|120,000,000|沒有名字的路邊|9, 82","Name":"名貴的克拉芙神劍","Category":"裝備","Attrs":"等級 90 重量 200 命中 652 傷害 838 耐久 1062/1062 力量 31 敏捷 24","Qty":"1","Price":"120,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的菲洛爾神斧|裝備|等級 70 重量 240 命中 261 傷害 888 耐久 821/821 力量 21 幸運 14|1|60,000,000|沒有名字的路邊|9, 82","Name":"名貴的菲洛爾神斧","Category":"裝備","Attrs":"等級 70 重量 240 命中 261 傷害 888 耐久 821/821 力量 21 幸運 14","Qty":"1","Price":"60,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的克拉芙神斧|裝備|等級 80 重量 240 命中 234 傷害 990 耐久 1026/1026 幸運 15|1|80,000,000|沒有名字的路邊|9, 82","Name":"名貴的克拉芙神斧","Category":"裝備","Attrs":"等級 80 重量 240 命中 234 傷害 990 耐久 1026/1026 幸運 15","Qty":"1","Price":"80,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精巧的龍神斧|裝備|等級 90 重量 240 命中 216 傷害 1042 耐久 1057/1057 智慧 25|1|80,000,000|沒有名字的路邊|9, 82","Name":"精巧的龍神斧","Category":"裝備","Attrs":"等級 90 重量 240 命中 216 傷害 1042 耐久 1057/1057 智慧 25","Qty":"1","Price":"80,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞神祕之鍊|裝備|等級 1 重量 20 耐久 1095/1095 體質 40 SP 775 金抗 579 暗抗 596|1|20,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞神祕之鍊","Category":"裝備","Attrs":"等級 1 重量 20 耐久 1095/1095 體質 40 SP 775 金抗 579 暗抗 596","Qty":"1","Price":"20,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":true,"OldPrice":23000000,"PriceDiff":3000000,"PrevTime":"2026-07-16 16:56:26"},{"Fingerprint":"改造的元素手套|裝備|等級 75 重量 60 防率 70 防禦 155 耐久 361/361 敏捷 11|1|30,000,000|沒有名字的路邊|9, 82","Name":"改造的元素手套","Category":"裝備","Attrs":"等級 75 重量 60 防率 70 防禦 155 耐久 361/361 敏捷 11","Qty":"1","Price":"30,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞天使項鍊|裝備|等級 65 重量 30 耐久 1678/1678 幸運 40 木抗 555 光抗 530 暗抗 567|1|20,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞天使項鍊","Category":"裝備","Attrs":"等級 65 重量 30 耐久 1678/1678 幸運 40 木抗 555 光抗 530 暗抗 567","Qty":"1","Price":"20,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的有洞神祕之鍊|裝備|等級 1 重量 20 耐久 1288/1288 體質 38 SP 734 木抗 553 光抗 582|1|6,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞神祕之鍊","Category":"裝備","Attrs":"等級 1 重量 20 耐久 1288/1288 體質 38 SP 734 木抗 553 光抗 582","Qty":"1","Price":"6,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":true,"OldPrice":23000000,"PriceDiff":17000000,"PrevTime":"2026-07-16 16:56:26"},{"Fingerprint":"精煉的有洞神祕之鍊|裝備|等級 40 重量 20 耐久 1459/1459 體質 38 幸運 41 金抗 582 木抗 590|1|23,000,000|沒有名字的路邊|9, 82","Name":"精煉的有洞神祕之鍊","Category":"裝備","Attrs":"等級 40 重量 20 耐久 1459/1459 體質 38 幸運 41 金抗 582 木抗 590","Qty":"1","Price":"23,000,000","Stall":"沒有名字的路邊","Position":"9, 82","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精巧的屠妖戰神斧|裝備|等級 96 重量 230 命中 349 傷害 1627 耐久 2308/2437 敏捷 16 智慧 20|1|2,000,000,000|收星域6E|9, 90","Name":"精巧的屠妖戰神斧","Category":"裝備","Attrs":"等級 96 重量 230 命中 349 傷害 1627 耐久 2308/2437 敏捷 16 智慧 20","Qty":"1","Price":"2,000,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的帝王神刃|裝備|等級 90 重量 180 命中 646 傷害 1023 耐久 2659/2670 HP 451|1|2,000,000,000|收星域6E|9, 90","Name":"名貴的帝王神刃","Category":"裝備","Attrs":"等級 90 重量 180 命中 646 傷害 1023 耐久 2659/2670 HP 451","Qty":"1","Price":"2,000,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的菲洛爾神鞭|裝備|等級 82 重量 50 命中 480 傷害 1175 耐久 3638/3638|1|2,000,000,000|收星域6E|9, 90","Name":"名貴的菲洛爾神鞭","Category":"裝備","Attrs":"等級 82 重量 50 命中 480 傷害 1175 耐久 3638/3638","Qty":"1","Price":"2,000,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的鳳羽拳套|裝備|等級 70 重量 60 命中 547 傷害 1082 耐久 1915/1915|1|1,200,000,000|收星域6E|9, 90","Name":"名貴的鳳羽拳套","Category":"裝備","Attrs":"等級 70 重量 60 命中 547 傷害 1082 耐久 1915/1915","Qty":"1","Price":"1,200,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的屠妖戰神斧|裝備|等級 90 重量 230 命中 387 傷害 1296 耐久 2771/2771 智慧 18|1|1,200,000,000|收星域6E|9, 90","Name":"名貴的屠妖戰神斧","Category":"裝備","Attrs":"等級 90 重量 230 命中 387 傷害 1296 耐久 2771/2771 智慧 18","Qty":"1","Price":"1,200,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"紅色柴浪人|寵物|-|1|240,000,000|收星域6E|9, 90","Name":"紅色柴浪人","Category":"寵物","Attrs":"-","Qty":"1","Price":"240,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"紅色柴浪人|寵物|-|1|240,000,000|收星域6E|9, 90","Name":"紅色柴浪人","Category":"寵物","Attrs":"-","Qty":"1","Price":"240,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"改造的血石魔杖|裝備|等級 80 重量 60 命中 194 傷害 144 耐久 5010/5010 HP 422|1|500,000,000|收星域6E|9, 90","Name":"改造的血石魔杖","Category":"裝備","Attrs":"等級 80 重量 60 命中 194 傷害 144 耐久 5010/5010 HP 422","Qty":"1","Price":"500,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"改造泅神斧|裝備|等級 100 重量 240 命中 370 傷害 852 耐久 674/674 力量 25 HP 601|1|10,000,000|收星域6E|9, 90","Name":"改造泅神斧","Category":"裝備","Attrs":"等級 100 重量 240 命中 370 傷害 852 耐久 674/674 力量 25 HP 601","Qty":"1","Price":"10,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"改造的嗜血之斧|裝備|等級 70 重量 210 命中 198 傷害 588 耐久 1212/1212|1|6,000,000|收星域6E|9, 90","Name":"改造的嗜血之斧","Category":"裝備","Attrs":"等級 70 重量 210 命中 198 傷害 588 耐久 1212/1212","Qty":"1","Price":"6,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的羊皮外套|裝備|等級 1 重量 50 防率 22 防禦 63 耐久 960/1007 HP 665 木抗 477|1|1,000,000|收星域6E|9, 90","Name":"精煉的羊皮外套","Category":"裝備","Attrs":"等級 1 重量 50 防率 22 防禦 63 耐久 960/1007 HP 665 木抗 477","Qty":"1","Price":"1,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的百鬼算盤|裝備|等級 71 重量 90 命中 440 傷害 682 耐久 1395/1395 力量 8 智慧 8|1|70,000,000|收星域6E|9, 90","Name":"名貴的百鬼算盤","Category":"裝備","Attrs":"等級 71 重量 90 命中 440 傷害 682 耐久 1395/1395 力量 8 智慧 8","Qty":"1","Price":"70,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的屠妖戰神斧|裝備|等級 90 重量 230 命中 285 傷害 816 耐久 967/967 敏捷 5 HP 556|1|500,000,000|收星域6E|9, 90","Name":"精煉的屠妖戰神斧","Category":"裝備","Attrs":"等級 90 重量 230 命中 285 傷害 816 耐久 967/967 敏捷 5 HP 556","Qty":"1","Price":"500,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"精煉的屠妖戰神斧|裝備|等級 90 重量 230 命中 323 傷害 793 耐久 1319/1319 體質 3 HP 598|1|500,000,000|收星域6E|9, 90","Name":"精煉的屠妖戰神斧","Category":"裝備","Attrs":"等級 90 重量 230 命中 323 傷害 793 耐久 1319/1319 體質 3 HP 598","Qty":"1","Price":"500,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"名貴的百鬼算盤|裝備|等級 70 重量 90 命中 391 傷害 732 耐久 779/779 力量 8 敏捷 7|1|50,000,000|收星域6E|9, 90","Name":"名貴的百鬼算盤","Category":"裝備","Attrs":"等級 70 重量 90 命中 391 傷害 732 耐久 779/779 力量 8 敏捷 7","Qty":"1","Price":"50,000,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"幻獸刮刮卡|道具|-|40|400,000|收星域6E|9, 90","Name":"幻獸刮刮卡","Category":"道具","Attrs":"-","Qty":"40","Price":"400,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"幻獸刮刮卡|道具|-|40|400,000|收星域6E|9, 90","Name":"幻獸刮刮卡","Category":"道具","Attrs":"-","Qty":"40","Price":"400,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"幻獸刮刮卡|道具|-|40|400,000|收星域6E|9, 90","Name":"幻獸刮刮卡","Category":"道具","Attrs":"-","Qty":"40","Price":"400,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"幻獸刮刮卡|道具|-|40|400,000|收星域6E|9, 90","Name":"幻獸刮刮卡","Category":"道具","Attrs":"-","Qty":"40","Price":"400,000","Stall":"收星域6E","Position":"9, 90","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"大地仙女|寵物|-|1|300,000,000|隨意的賣|9, 98","Name":"大地仙女","Category":"寵物","Attrs":"-","Qty":"1","Price":"300,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"大地仙女|寵物|-|1|300,000,000|隨意的賣|9, 98","Name":"大地仙女","Category":"寵物","Attrs":"-","Qty":"1","Price":"300,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"善良仙女|寵物|-|1|450,000,000|隨意的賣|9, 98","Name":"善良仙女","Category":"寵物","Attrs":"-","Qty":"1","Price":"450,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"狗狗小黃|寵物|-|1|300,000,000|隨意的賣|9, 98","Name":"狗狗小黃","Category":"寵物","Attrs":"-","Qty":"1","Price":"300,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"狗狗小白|寵物|-|1|400,000,000|隨意的賣|9, 98","Name":"狗狗小白","Category":"寵物","Attrs":"-","Qty":"1","Price":"400,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"拾木鼠小精靈|道具|-|1|600,000,000|隨意的賣|9, 98","Name":"拾木鼠小精靈","Category":"道具","Attrs":"-","Qty":"1","Price":"600,000,000","Stall":"隨意的賣","Position":"9, 98","FirstSeenSiteUpdate":"2026-07-16 15:52","IsNew":true,"PriceDropped":false},{"Fingerprint":"玻璃種子|道具|-|40|94,200,000|魔晶玻種體智力敏|9, 106","Name":"玻璃種子","Category":"道具","Attrs":"-","Qty":"40","Price":"94,200,000","Stall":"魔晶玻種體智力敏","Position":"9, 106","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"精煉的筆記本|裝備|等級 1 重量 10 防率 0 防禦 0 耐久 1008/1008 體質 38 幸運 38 金抗 563 光抗 518|1|120,000,000|魔晶玻種體智力敏|9, 106","Name":"精煉的筆記本","Category":"裝備","Attrs":"等級 1 重量 10 防率 0 防禦 0 耐久 1008/1008 體質 38 幸運 38 金抗 563 光抗 518","Qty":"1","Price":"120,000,000","Stall":"魔晶玻種體智力敏","Position":"9, 106","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"苜蓿草妖精|寵物|-|1|150,000,000|魔晶玻種體智力敏|9, 106","Name":"苜蓿草妖精","Category":"寵物","Attrs":"-","Qty":"1","Price":"150,000,000","Stall":"魔晶玻種體智力敏","Position":"9, 106","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"金星變身劑|道具|-|1|500,000|魔晶玻種體智力敏|9, 106","Name":"金星變身劑","Category":"道具","Attrs":"-","Qty":"1","Price":"500,000","Stall":"魔晶玻種體智力敏","Position":"9, 106","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false},{"Fingerprint":"改造的誅神鞭|裝備|等級 95 重量 50 命中 187 傷害 171 耐久 33518/33518|1|2,000,000,000|展示架|9, 114","Name":"改造的誅神鞭","Category":"裝備","Attrs":"等級 95 重量 50 命中 187 傷害 171 耐久 33518/33518","Qty":"1","Price":"2,000,000,000","Stall":"展示架","Position":"9, 114","FirstSeenSiteUpdate":"2026-07-16 15:06","IsNew":false,"PriceDropped":false}];
+        const pageLoadTime = "2026-07-16 17:08:32";
+
+        // 1. 自動背景刷新檢查 (輪詢 JS 檔)
+        function checkLiveUpdate() {
+            const oldScript = document.getElementById('liveStampScript');
+            if (oldScript) oldScript.remove();
+            
+            const script = document.createElement('script');
+            script.id = 'liveStampScript';
+            script.src = 'live-stamp.js?t=' + new Date().getTime();
+            script.onload = function() {
+                if (window.__last_market_update && window.__last_market_update !== pageLoadTime) {
+                    console.log("市場資料已更新，重新載入頁面中...");
+                    window.location.reload();
+                }
+            };
+            document.head.appendChild(script);
+        }
+        setInterval(checkLiveUpdate, 5000); // 5 秒輪詢一次
+
+        // 2. 價格統計：只篩選非裝備一般道具
+        const isGeneralItem = function(item) {
+            const cat = item.Category;
+            return !cat.includes("武器") && !cat.includes("防具") && !cat.includes("裝備") && item.Attrs === "-";
+        };
+
+        const statsMap = {};
+        rawData.forEach(function(item) {
+            if (isGeneralItem(item)) {
+                const priceNum = parseInt(item.Price.replace(/,/g, ''), 10) || 0;
+                if (priceNum > 0) {
+                    if (!statsMap[item.Name]) statsMap[item.Name] = [];
+                    statsMap[item.Name].push(priceNum);
+                }
+            }
+        });
+
+        const itemStats = {};
+        for (const name in statsMap) {
+            const prices = statsMap[name];
+            const min = Math.min.apply(null, prices);
+            const max = Math.max.apply(null, prices);
+            itemStats[name] = { min: min, max: max, count: prices.length };
+        }
+
+        // 數值縮減格式化
+        function formatCompact(num) {
+            if (num >= 10000) {
+                const formatted = (num / 10000).toFixed(1).replace(/\.0$/, '');
+                return formatted + '萬';
+            }
+            return num.toLocaleString();
+        }
+
+        // 3. 屬性過濾邏輯
+        function parseAttributeValue(attrText, attrName) {
+            if (!attrText || attrText === "-") return null;
+            
+            var query = attrName.trim();
+            if (!query) return null;
+
+            if (query === "精鍊" || query === "精煉") {
+                var refineMatch = attrText.match(/\+([0-9]+)/);
+                return refineMatch ? parseInt(refineMatch[1], 10) : null;
+            }
+
+            var regex = new RegExp(query + "\\s*\\+?\\s*([0-9]+)");
+            var match = attrText.match(regex);
+            return match ? parseInt(match[1], 10) : null;
+        }
+
+        // 4. 前端資料繪製
+        function filterData() {
+            var nameQuery = document.getElementById('searchName').value.toLowerCase();
+            var attrQuery = document.getElementById('searchAttr').value.trim();
+            var minVal = parseInt(document.getElementById('minAttrValue').value, 10) || 0;
+            var onlyNew = document.getElementById('onlyNew').checked;
+            
+            var tbody = document.getElementById('itemTableBody');
+            tbody.innerHTML = '';
+
+            rawData.forEach(function(item) {
+                var nameMatch = !nameQuery || item.Name.toLowerCase().indexOf(nameQuery) !== -1;
+                
+                var attrMatch = true;
+                if (attrQuery) {
+                    var extractedValue = parseAttributeValue(item.Attrs, attrQuery);
+                    if (extractedValue !== null) {
+                        attrMatch = extractedValue >= minVal;
+                    } else {
+                        attrMatch = false; 
+                    }
+                }
+
+                // 「只看 NEW」過濾邏輯
+                var newMatch = !onlyNew || item.IsNew;
+
+                if (nameMatch && attrMatch && newMatch) {
+                    var row = document.createElement('tr');
+                    if (attrQuery) {
+                        row.className = 'highlight';
+                    }
+                    
+                    // NEW 標籤
+                    var nameDisplay = '<strong>' + item.Name + '</strong>';
+                    if (item.IsNew) {
+                        nameDisplay += '<span class="badge-new">NEW</span>';
+                    }
+                    
+                    // 價格資訊 / 降價 / 價格區間
+                    var priceDisplay = '<div style="color: #e53e3e; font-weight: bold;">' + item.Price + '</div>';
+                    if (item.PriceDropped) {
+                        var tStr = "";
+                        if (item.PrevTime) {
+                            var parts = item.PrevTime.split(' ');
+                            if (parts.length >= 2) {
+                                var datePart = parts[0].substring(5); // 取 "MM-DD"
+                                var timePart = parts[1].substring(0, 5); // 取 "HH:MM"
+                                tStr = ' (對比 ' + datePart + ' ' + timePart + ')';
+                            } else {
+                                tStr = ' (對比上次)';
+                            }
+                        }
+                        priceDisplay += '<div class="price-drop">↓ 便宜了 ' + item.PriceDiff.toLocaleString() + tStr + '</div>';
+                    } else if (isGeneralItem(item) && itemStats[item.Name] && itemStats[item.Name].count > 1) {
+                        var stat = itemStats[item.Name];
+                        priceDisplay += '<div class="price-stat" title="市場最低價與最高價區間">區間: ' + 
+                                        formatCompact(stat.min) + ' ~ ' + formatCompact(stat.max) + '</div>';
+                    }
+                    
+                    var attrDisplay = item.Attrs !== "-" ? '<span class="badge badge-attr">' + item.Attrs + '</span>' : "-";
+                    
+                    row.innerHTML = '<td>' + nameDisplay + '</td>' +
+                                    '<td>' + attrDisplay + '</td>' +
+                                    '<td>' + priceDisplay + '</td>' +
+                                    '<td>' + item.Qty + '</td>' +
+                                    '<td>' + item.Stall + '</td>' +
+                                    '<td style="color: #718096; font-size: 0.9em;">' + item.Position + '</td>' +
+                                    '<td><span class="badge">' + item.Category + '</span></td>';
+                    
+                    tbody.appendChild(row);
+                }
+            });
+        }
+
+        // 初始化
+        filterData();
+    </script>
+</body>
+</html>
