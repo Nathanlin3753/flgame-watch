@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-07-16 17:12:14",
+    "FetchedAt":  "2026-07-16 17:25:45",
     "SiteUpdated":  "2026-07-16 15:52",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -138,7 +138,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  40000000,
                       "PriceDiff":  12000000,
-                      "PrevTime":  "2026-07-16 17:08:32"
+                      "PrevTime":  "2026-07-16 17:23:05"
                   },
                   {
                       "Fingerprint":  "精巧的菲洛爾神劍|裝備|等級 70 重量 200 命中 598 傷害 742 耐久 943/943 力量 21 體質 17|1|40,000,000|沒有名字的路邊|9, 82",
@@ -219,7 +219,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  23000000,
                       "PriceDiff":  3000000,
-                      "PrevTime":  "2026-07-16 17:08:32"
+                      "PrevTime":  "2026-07-16 17:23:05"
                   },
                   {
                       "Fingerprint":  "改造的元素手套|裝備|等級 75 重量 60 防率 70 防禦 155 耐久 361/361 敏捷 11|1|30,000,000|沒有名字的路邊|9, 82",
@@ -261,7 +261,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  23000000,
                       "PriceDiff":  17000000,
-                      "PrevTime":  "2026-07-16 17:08:32"
+                      "PrevTime":  "2026-07-16 17:23:05"
                   },
                   {
                       "Fingerprint":  "精煉的有洞神祕之鍊|裝備|等級 40 重量 20 耐久 1459/1459 體質 38 幸運 41 金抗 582 木抗 590|1|23,000,000|沒有名字的路邊|9, 82",
@@ -532,8 +532,8 @@
                       "Price":  "300,000,000",
                       "Stall":  "隨意的賣",
                       "Position":  "9, 98",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -545,8 +545,8 @@
                       "Price":  "300,000,000",
                       "Stall":  "隨意的賣",
                       "Position":  "9, 98",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -558,8 +558,8 @@
                       "Price":  "450,000,000",
                       "Stall":  "隨意的賣",
                       "Position":  "9, 98",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -571,8 +571,8 @@
                       "Price":  "300,000,000",
                       "Stall":  "隨意的賣",
                       "Position":  "9, 98",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -584,8 +584,8 @@
                       "Price":  "400,000,000",
                       "Stall":  "隨意的賣",
                       "Position":  "9, 98",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -610,8 +610,8 @@
                       "Price":  "94,200,000",
                       "Stall":  "魔晶玻種體智力敏",
                       "Position":  "9, 106",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -623,8 +623,8 @@
                       "Price":  "120,000,000",
                       "Stall":  "魔晶玻種體智力敏",
                       "Position":  "9, 106",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -636,8 +636,8 @@
                       "Price":  "150,000,000",
                       "Stall":  "魔晶玻種體智力敏",
                       "Position":  "9, 106",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -649,8 +649,8 @@
                       "Price":  "500,000",
                       "Stall":  "魔晶玻種體智力敏",
                       "Position":  "9, 106",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -662,8 +662,8 @@
                       "Price":  "2,000,000,000",
                       "Stall":  "展示架",
                       "Position":  "9, 114",
-                      "FirstSeenSiteUpdate":  "2026-07-16 15:06",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-07-16 15:52",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
