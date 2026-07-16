@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-07-16 16:03:34",
+    "FetchedAt":  "2026-07-16 16:56:26",
     "SiteUpdated":  "2026-07-16 15:52",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -135,7 +135,10 @@
                       "Position":  "9, 82",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  40000000,
+                      "PriceDiff":  12000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的菲洛爾神劍|裝備|等級 70 重量 200 命中 598 傷害 742 耐久 943/943 力量 21 體質 17|1|40,000,000|沒有名字的路邊|9, 82",
@@ -213,7 +216,10 @@
                       "Position":  "9, 82",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  23000000,
+                      "PriceDiff":  3000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的元素手套|裝備|等級 75 重量 60 防率 70 防禦 155 耐久 361/361 敏捷 11|1|30,000,000|沒有名字的路邊|9, 82",
@@ -252,7 +258,10 @@
                       "Position":  "9, 82",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  23000000,
+                      "PriceDiff":  17000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精煉的有洞神祕之鍊|裝備|等級 40 重量 20 耐久 1459/1459 體質 38 幸運 41 金抗 582 木抗 590|1|23,000,000|沒有名字的路邊|9, 82",
@@ -590,10 +599,7 @@
                       "Position":  "9, 98",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  1174405120,
-                      "PriceDiff":  574405120,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "玻璃種子|道具|-|40|94,200,000|魔晶玻種體智力敏|9, 106",
@@ -814,7 +820,10 @@
                       "Position":  "10, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  160000000,
+                      "PriceDiff":  10000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "龍之戒|裝備|等級 100 重量 20 耐久 500/500 智慧 8|1|140,000,000|沒有名字的路邊攤|10, 66",
@@ -827,7 +836,10 @@
                       "Position":  "10, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  160000000,
+                      "PriceDiff":  20000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "龍之戒|裝備|等級 94 重量 20 耐久 500/500 幸運 6|1|190,000,000|沒有名字的路邊攤|10, 66",
@@ -1376,7 +1388,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  900000000,
                       "PriceDiff":  450000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "智慧調整藥水|道具|-|1|150,000,000|沒有名字的路邊攤|10, 106",
@@ -1392,7 +1404,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  450000000,
                       "PriceDiff":  300000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魅力調整藥水|道具|-|1|150,000,000|沒有名字的路邊攤|10, 106",
@@ -1408,7 +1420,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  1200000000,
                       "PriceDiff":  1050000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "力量調整藥水|道具|-|1|150,000,000|沒有名字的路邊攤|10, 106",
@@ -1424,7 +1436,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  750000000,
                       "PriceDiff":  600000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魅力調整藥水|道具|-|8|1,200,000,000|沒有名字的路邊攤|10, 106",
@@ -1661,7 +1673,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  600000000,
                       "PriceDiff":  450000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "智慧調整藥水|道具|-|1|150,000,000|沒有名字的路邊攤|10, 114",
@@ -1677,7 +1689,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  450000000,
                       "PriceDiff":  300000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魅力調整藥水|道具|-|1|150,000,000|沒有名字的路邊攤|10, 114",
@@ -1693,7 +1705,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  1200000000,
                       "PriceDiff":  1050000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魅力調整藥水|道具|-|8|1,200,000,000|沒有名字的路邊攤|10, 114",
@@ -2060,7 +2072,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  280000000,
                       "PriceDiff":  10000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍神靴|裝備|等級 90 重量 100 防率 74 防禦 279 耐久 497/497 敏捷 26 智慧 33|1|300,000,000|展示架|11, 66",
@@ -2102,7 +2114,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  280000000,
                       "PriceDiff":  10000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍神靴|裝備|等級 100 重量 100 防率 70 防禦 413 耐久 445/445 敏捷 26 智慧 34 體質 25|1|270,000,000|展示架|11, 66",
@@ -2118,7 +2130,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  280000000,
                       "PriceDiff":  10000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍神靴|裝備|等級 90 重量 100 防率 70 防禦 377 耐久 404/404 敏捷 27 智慧 33|1|300,000,000|展示架|11, 66",
@@ -2196,7 +2208,10 @@
                       "Position":  "11, 82",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  400000000,
+                      "PriceDiff":  20000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的路加斯算盤|裝備|等級 74 重量 90 命中 472 傷害 810 耐久 2344/2344 力量 9 HP 224|1|400,000,000|小算盤|11, 82",
@@ -2339,7 +2354,10 @@
                       "Position":  "11, 82",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  80000000,
+                      "PriceDiff":  56000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "元素神啟書|道具|-|10|80,000,000|小算盤|11, 82",
@@ -3044,7 +3062,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  250000000,
                       "PriceDiff":  50000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級 100 重量 35 耐久 379/379 HP 1004 SP 1002|1|200,000,000|沒有名字的路邊攤|12, 66",
@@ -3060,7 +3078,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  250000000,
                       "PriceDiff":  50000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級 90 重量 35 耐久 327/327 敏捷 20 智慧 22|1|1,000,000,000|沒有名字的路邊攤|12, 66",
@@ -3089,7 +3107,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  250000000,
                       "PriceDiff":  50000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級 91 重量 35 耐久 235/235 敏捷 22 智慧 21|1|380,000,000|沒有名字的路邊攤|12, 66",
@@ -3144,7 +3162,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  250000000,
                       "PriceDiff":  50000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級 90 重量 35 耐久 256/256 力量 21 智慧 20|1|250,000,000|沒有名字的路邊攤|12, 66",
@@ -3186,7 +3204,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  250000000,
                       "PriceDiff":  50000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級 90 重量 35 耐久 297/297 力量 22 智慧 22 SP 1001|1|250,000,000|沒有名字的路邊攤|12, 66",
@@ -4060,7 +4078,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  150000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魅力調整藥水|道具|-|2|300,000,000|沒有名字的路邊攤|12, 114",
@@ -4167,7 +4185,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  560000000,
                       "PriceDiff":  420000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "勁防具防爆降級劑|道具|-|2|140,000,000|沒有名字的路邊攤|12, 114",
@@ -4183,7 +4201,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  560000000,
                       "PriceDiff":  420000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "勁防具防爆降級劑|道具|-|2|140,000,000|沒有名字的路邊攤|12, 114",
@@ -4199,7 +4217,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  560000000,
                       "PriceDiff":  420000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "勁防具防爆降級劑|道具|-|8|560,000,000|沒有名字的路邊攤|12, 114",
@@ -4397,7 +4415,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  100000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的無敵大聲公|裝備|等級 100 重量 50 防率 30 防禦 0 耐久 529/529 火抗 835|1|300,000,000|沒有名字的路邊攤|13, 66",
@@ -4426,7 +4444,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  100000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的無敵大聲公|裝備|等級 200 重量 50 防率 36 防禦 0 耐久 417/417 力量 23 敏捷 25|1|500,000,000|沒有名字的路邊攤|13, 66",
@@ -4611,7 +4629,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  500000000,
                       "PriceDiff":  250000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精煉的工作帽|裝備|等級 1 重量 25 防率 5 防禦 46 耐久 727/1011 敏捷 30 智慧 32 木抗 489 水抗 494|1|250,000,000|展示架|13, 82",
@@ -4796,7 +4814,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  3333333,
                       "PriceDiff":  1833333,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "新月石|道具|-|40|3,333,333|沒有名字的路邊攤|13, 90",
@@ -7305,7 +7323,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  72000000,
+                      "PriceDiff":  3000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魔力充盈的精靈守護戒指|裝備|等級 64 重量 20 耐久 444/444 幸運 5|1|70,000,000|沒有名字的路邊攤|16, 66",
@@ -7318,7 +7339,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  72000000,
+                      "PriceDiff":  2000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "超自然的精靈守護戒指|裝備|等級 63 重量 20 耐久 443/443 力量 7|1|70,000,000|沒有名字的路邊攤|16, 66",
@@ -7383,7 +7407,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  70000000,
+                      "PriceDiff":  1000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "超自然的精靈守護戒指|裝備|等級 63 重量 20 耐久 443/443 智慧 5|1|65,000,000|沒有名字的路邊攤|16, 66",
@@ -7396,7 +7423,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  69000000,
+                      "PriceDiff":  4000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "完美無暇的精靈守護戒指|裝備|等級 65 重量 20 耐久 445/445 體質 5|1|75,000,000|沒有名字的路邊攤|16, 66",
@@ -7435,7 +7465,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  69000000,
+                      "PriceDiff":  9000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "超自然的精靈守護戒指|裝備|等級 63 重量 20 耐久 443/443 體質 3|1|69,000,000|沒有名字的路邊攤|16, 66",
@@ -7461,7 +7494,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  69000000,
+                      "PriceDiff":  4000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "超自然的精靈守護戒指|裝備|等級 63 重量 20 耐久 443/443 魅力 5|1|69,000,000|沒有名字的路邊攤|16, 66",
@@ -7487,7 +7523,10 @@
                       "Position":  "16, 66",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  72000000,
+                      "PriceDiff":  4000000,
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "魔力充盈的精靈守護戒指|裝備|等級 64 重量 20 耐久 444/444 體質 6|1|72,000,000|沒有名字的路邊攤|16, 66",
@@ -8439,7 +8478,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  1000000,
                       "PriceDiff":  500000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "黑鋼Be Quick娃娃|道具|-|1|500,000|沒有名字的路邊攤|17, 90",
@@ -11848,7 +11887,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  80000000,
                       "PriceDiff":  20000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "名貴的菲洛爾算盤|裝備|等級 85 重量 90 命中 474 傷害 820 耐久 889/889 智慧 21|1|80,000,000|小小資|20, 90",
@@ -12020,7 +12059,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  20000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的龍神斧|裝備|等級 81 重量 240 命中 195 傷害 1042 耐久 1099/1099 智慧 25 幸運 16 HP 601|1|200,000,000|沒有名字的路邊攤|21, 66",
@@ -12075,7 +12114,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  20000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的天下一品算盤|裝備|等級 96 重量 90 命中 492 傷害 533 耐久 1121/1121 魅力 8|1|280,000,000|沒有名字的路邊攤|21, 66",
@@ -12091,7 +12130,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  20000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的路加斯神拳|裝備|等級 77 重量 75 命中 413 傷害 682 耐久 846/846 敏捷 18 體質 18 HP 541|1|150,000,000|沒有名字的路邊攤|21, 66",
@@ -12133,7 +12172,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  80000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的天下一品算盤|裝備|等級 100 重量 90 命中 629 傷害 406 耐久 1095/1095 體質 25|1|240,000,000|沒有名字的路邊攤|21, 66",
@@ -12149,7 +12188,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  300000000,
                       "PriceDiff":  60000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "改造的天下一品算盤|裝備|等級 100 重量 90 命中 486 傷害 458 耐久 1121/1121 魅力 10|1|300,000,000|沒有名字的路邊攤|21, 66",
@@ -13358,10 +13397,7 @@
                       "Position":  "22, 98",
                       "FirstSeenSiteUpdate":  "2026-07-16 15:52",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  1262485504,
-                      "PriceDiff":  1257485504,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "超級幻獸加油棒|道具|-|1|48,000,000|單智貓推龍心封石|22, 106",
@@ -13572,7 +13608,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  1800000,
                       "PriceDiff":  800000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "三級封印石|道具|-|20|1,800,000|單智貓推龍心封石|22, 106",
@@ -13614,7 +13650,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  16000000,
                       "PriceDiff":  7000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "五級封印石|道具|-|20|16,000,000|單智貓推龍心封石|22, 106",
@@ -14423,7 +14459,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  2000000000,
                       "PriceDiff":  800000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的天下一品算盤|裝備|等級 92 重量 90 命中 490 傷害 902 耐久 3240/3240 力量 11 敏捷 9|1|700,000,000|沒有名字的路邊攤|27, 66",
@@ -14439,7 +14475,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  2000000000,
                       "PriceDiff":  1300000000,
-                      "PrevTime":  "2026-07-16 15:46:41"
+                      "PrevTime":  "2026-07-16 16:03:34"
                   },
                   {
                       "Fingerprint":  "精巧的天下一品算盤|裝備|等級 100 重量 90 命中 914 傷害 1544 耐久 2102/2102 HP 303|1|2,000,000,000|沒有名字的路邊攤|27, 66",

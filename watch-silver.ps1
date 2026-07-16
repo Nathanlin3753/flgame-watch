@@ -315,7 +315,7 @@ foreach ($it in $snap.Items) {
 }
 
 # ==================== 2. 自動產生 HTML 互動儀表板 ====================
-$HtmlPath = Join-Path $StateDir "market-dashboard.html"
+$HtmlPath = Join-Path $StateDir "index.html"
 $StampPath = Join-Path $StateDir "live-stamp.js"
 $IsFirstTime = -not (Test-Path $HtmlPath)
 
