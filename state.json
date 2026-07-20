@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-07-20 17:19:11",
+    "FetchedAt":  "2026-07-20 17:33:14",
     "SiteUpdated":  "2026-07-20 17:17",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -1209,10 +1209,7 @@
                       "Position":  "9, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 17:17",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  444596224,
-                      "PriceDiff":  444196224,
-                      "PrevTime":  "2026-07-20 17:17:55"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "龍之戒|裝備|等級\u0026#xff1a; 90 重量\u0026#xff1a; 20 耐久\u0026#xff1a; 500/500 力量\u0026#xff1a; 5 提高遇敵機率\u0026#xff1a; 83 戰鬥經驗\u0026#xff1a; 90|1|250,000,000|沒有名字的路邊攤|10, 66",
@@ -7820,7 +7817,10 @@
                       "Position":  "14, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 15:02",
                       "IsNew":  false,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  1742733342,
+                      "PriceDiff":  1739233342,
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "魔晶石|道具|-|40|23,800,000|蝦七八的路邊攤|14, 114",
@@ -7974,7 +7974,10 @@
                       "Position":  "14, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 15:02",
                       "IsNew":  false,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  1742733342,
+                      "PriceDiff":  1739233342,
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "鑽石|道具|-|40|3,500,000|蝦七八的路邊攤|14, 114",
@@ -7988,7 +7991,10 @@
                       "Position":  "14, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 15:02",
                       "IsNew":  false,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  1742733342,
+                      "PriceDiff":  1739233342,
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "鑽石|道具|-|40|1,742,733,342|蝦七八的路邊攤|14, 114",
@@ -13882,10 +13888,7 @@
                       "Position":  "20, 98",
                       "FirstSeenSiteUpdate":  "2026-07-20 17:17",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  1207959552,
-                      "PriceDiff":  1175959552,
-                      "PrevTime":  "2026-07-20 17:17:55"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "紅寶石|道具|-|40|3,000,000|沒有名字的路邊攤|20, 106",
@@ -15316,7 +15319,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  18000000,
                       "PriceDiff":  3000000,
-                      "PrevTime":  "2026-07-20 17:17:55"
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "商店貴賓卡|道具|-|40|3,400,000|玻璃玩具智鞋和券|21, 114",
@@ -15333,7 +15336,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  3500000,
                       "PriceDiff":  100000,
-                      "PrevTime":  "2026-07-20 17:17:55"
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "命中寶石|道具|-|1|40,000|玻璃玩具智鞋和券|21, 114",
@@ -15420,7 +15423,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  3500000,
                       "PriceDiff":  100000,
-                      "PrevTime":  "2026-07-20 17:17:55"
+                      "PrevTime":  "2026-07-20 17:31:57"
                   },
                   {
                       "Fingerprint":  "商店貴賓卡|道具|-|40|3,500,000|玻璃玩具智鞋和券|21, 114",
@@ -19656,5 +19659,8 @@
                               "SiteUpdated":  "2026-07-20 17:17",
                               "FetchedAt":  "2026-07-20 17:19:11"
                           }
-                      ]
+                      ],
+    "SoldItems":  [
+
+                  ]
 }
