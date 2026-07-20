@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-07-20 20:42:32",
+    "FetchedAt":  "2026-07-20 20:52:47",
     "SiteUpdated":  "2026-07-20 20:41",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -190,11 +190,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級生命娃娃|道具|重量\u0026#xff1a; 10|1|1,000,000|收星域6E|9, 58",
+                      "Fingerprint":  "高級生命娃娃|道具|重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10|1|1,000,000|收星域6E|9, 58",
                       "Name":  "高級生命娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71158.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 10",
+                      "Attrs":  "重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "1,000,000",
                       "Stall":  "收星域6E",
@@ -2556,11 +2556,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|14,000,000|展示架|10, 114",
+                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|14,000,000|展示架|10, 114",
                       "Name":  "高級戰鬥娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "14,000,000",
                       "Stall":  "展示架",
@@ -2570,11 +2570,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|14,000,000|展示架|10, 114",
+                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|14,000,000|展示架|10, 114",
                       "Name":  "高級戰鬥娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "14,000,000",
                       "Stall":  "展示架",
@@ -2710,11 +2710,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10|1|3,000,000|展示架|10, 114",
+                      "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10|1|3,000,000|展示架|10, 114",
                       "Name":  "高級法力娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71159.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 10",
+                      "Attrs":  "重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "3,000,000",
                       "Stall":  "展示架",
@@ -2724,11 +2724,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10|1|3,000,000|展示架|10, 114",
+                      "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10|1|3,000,000|展示架|10, 114",
                       "Name":  "高級法力娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71159.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 10",
+                      "Attrs":  "重量\u0026#xff1a; 10 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "3,000,000",
                       "Stall":  "展示架",
@@ -6476,11 +6476,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30|1|55,555,555|展示架|13, 90",
+                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|55,555,555|展示架|13, 90",
                       "Name":  "寵物愛心棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71162.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "55,555,555",
                       "Stall":  "展示架",
@@ -7652,11 +7652,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|35,000,000|雜貨店|14, 90",
+                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|35,000,000|雜貨店|14, 90",
                       "Name":  "寵物鞭打棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "35,000,000",
                       "Stall":  "雜貨店",
@@ -7736,11 +7736,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "長效經驗娃娃|道具|重量\u0026#xff1a; 5|1|9,000,000|雜貨店|14, 90",
+                      "Fingerprint":  "長效經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|9,000,000|雜貨店|14, 90",
                       "Name":  "長效經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71118.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "9,000,000",
                       "Stall":  "雜貨店",
@@ -7764,11 +7764,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|35,000,000|雜貨店|14, 90",
+                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|35,000,000|雜貨店|14, 90",
                       "Name":  "寵物鞭打棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "35,000,000",
                       "Stall":  "雜貨店",
@@ -7778,11 +7778,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|12,000,000|雜貨店|14, 90",
+                      "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|12,000,000|雜貨店|14, 90",
                       "Name":  "高級戰鬥娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "12,000,000",
                       "Stall":  "雜貨店",
@@ -8660,11 +8660,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|52,000,000|沒有名字的路邊攤|15, 90",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|52,000,000|沒有名字的路邊攤|15, 90",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "52,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -8674,11 +8674,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30|1|52,000,000|沒有名字的路邊攤|15, 90",
+                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|52,000,000|沒有名字的路邊攤|15, 90",
                       "Name":  "超級幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71174.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "52,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -8688,11 +8688,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|33,333,333|沒有名字的路邊攤|15, 90",
+                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|33,333,333|沒有名字的路邊攤|15, 90",
                       "Name":  "寵物鞭打棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "33,333,333",
                       "Stall":  "沒有名字的路邊攤",
@@ -8702,11 +8702,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30|1|65,000,000|沒有名字的路邊攤|15, 90",
+                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|65,000,000|沒有名字的路邊攤|15, 90",
                       "Name":  "寵物愛心棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71162.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "65,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -9458,11 +9458,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|55,000,000|棍子比OK蹦便宜|15, 114",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|55,000,000|棍子比OK蹦便宜|15, 114",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "55,000,000",
                       "Stall":  "棍子比OK蹦便宜",
@@ -11152,11 +11152,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|26,000,000|沒有名字的路邊攤|17, 90",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 3/6|1|26,000,000|沒有名字的路邊攤|17, 90",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 3/6",
                       "Qty":  "1",
                       "Price":  "26,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11600,11 +11600,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30|1|60,008,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|60,008,000|沒有名字的路邊攤|17, 106",
                       "Name":  "寵物愛心棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71162.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "60,008,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11614,11 +11614,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|60,008,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|60,008,000|沒有名字的路邊攤|17, 106",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "60,008,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11628,11 +11628,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|40,008,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|40,008,000|沒有名字的路邊攤|17, 106",
                       "Name":  "寵物鞭打棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "40,008,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11642,11 +11642,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30|1|60,010,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|60,010,000|沒有名字的路邊攤|17, 106",
                       "Name":  "超級幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71174.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "60,010,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11684,11 +11684,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5|1|3,000,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|3,000,000|沒有名字的路邊攤|17, 106",
                       "Name":  "肉墊娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71141.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "3,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11698,11 +11698,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5|1|3,000,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|3,000,000|沒有名字的路邊攤|17, 106",
                       "Name":  "肉墊娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71141.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "3,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -11768,11 +11768,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5|1|3,000,000|沒有名字的路邊攤|17, 106",
+                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|3,000,000|沒有名字的路邊攤|17, 106",
                       "Name":  "肉墊娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71141.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "3,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -12230,11 +12230,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|18,000,000|展示架|18, 90",
                       "Name":  "幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "18,000,000",
                       "Stall":  "展示架",
@@ -12244,11 +12244,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|18,000,000|展示架|18, 90",
                       "Name":  "幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "18,000,000",
                       "Stall":  "展示架",
@@ -12258,11 +12258,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|18,000,000|展示架|18, 90",
                       "Name":  "幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "18,000,000",
                       "Stall":  "展示架",
@@ -13700,11 +13700,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|1,000,000,000|換 飛鴿|19, 114",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 72/72|1|1,000,000,000|換 飛鴿|19, 114",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 72/72",
                       "Qty":  "1",
                       "Price":  "1,000,000,000",
                       "Stall":  "換 飛鴿",
@@ -13714,11 +13714,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30|1|1,000,000,000|換 飛鴿|19, 114",
+                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 72/72|1|1,000,000,000|換 飛鴿|19, 114",
                       "Name":  "超級幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71174.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 72/72",
                       "Qty":  "1",
                       "Price":  "1,000,000,000",
                       "Stall":  "換 飛鴿",
@@ -14456,11 +14456,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5|1|200,000|沒有名字的路邊攤|20, 106",
+                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10|1|200,000|沒有名字的路邊攤|20, 106",
                       "Name":  "生命娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71138.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "200,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -14470,11 +14470,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5|1|200,000|沒有名字的路邊攤|20, 106",
+                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10|1|200,000|沒有名字的路邊攤|20, 106",
                       "Name":  "生命娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71138.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "200,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -14484,11 +14484,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5|1|200,000|沒有名字的路邊攤|20, 106",
+                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10|1|200,000|沒有名字的路邊攤|20, 106",
                       "Name":  "生命娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71138.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "200,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -14498,11 +14498,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5|1|200,000|沒有名字的路邊攤|20, 106",
+                      "Fingerprint":  "生命娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10|1|200,000|沒有名字的路邊攤|20, 106",
                       "Name":  "生命娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71138.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 10/10",
                       "Qty":  "1",
                       "Price":  "200,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -14512,11 +14512,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30|1|50,000,000|沒有名字的路邊攤|20, 106",
+                      "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|50,000,000|沒有名字的路邊攤|20, 106",
                       "Name":  "超級幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71174.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "50,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -15394,11 +15394,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|60,000,000|展示架|21, 82",
+                      "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|60,000,000|展示架|21, 82",
                       "Name":  "超級經驗娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
+                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "60,000,000",
                       "Stall":  "展示架",
@@ -15713,10 +15713,7 @@
                       "Position":  "21, 106",
                       "FirstSeenSiteUpdate":  "2026-07-20 20:41",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  2000000000,
-                      "PriceDiff":  1101108224,
-                      "PrevTime":  "2026-07-20 20:41:16"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "紳士雪怪|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55|1|220,000,000|玻璃玩具智鞋和券|21, 114",
@@ -15873,7 +15870,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  18000000,
                       "PriceDiff":  3000000,
-                      "PrevTime":  "2026-07-20 20:41:16"
+                      "PrevTime":  "2026-07-20 20:51:30"
                   },
                   {
                       "Fingerprint":  "商店貴賓卡|道具|重量\u0026#xff1a; 0|40|3,400,000|玻璃玩具智鞋和券|21, 114",
@@ -15887,7 +15884,10 @@
                       "Position":  "21, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 20:41",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  3500000,
+                      "PriceDiff":  100000,
+                      "PrevTime":  "2026-07-20 20:51:30"
                   },
                   {
                       "Fingerprint":  "命中寶石|道具|重量\u0026#xff1a; 25|1|40,000|玻璃玩具智鞋和券|21, 114",
@@ -15971,7 +15971,10 @@
                       "Position":  "21, 114",
                       "FirstSeenSiteUpdate":  "2026-07-20 20:41",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  3500000,
+                      "PriceDiff":  100000,
+                      "PrevTime":  "2026-07-20 20:51:30"
                   },
                   {
                       "Fingerprint":  "商店貴賓卡|道具|重量\u0026#xff1a; 0|40|3,500,000|玻璃玩具智鞋和券|21, 114",
@@ -17150,11 +17153,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|15,000,000|展示架|22, 114",
+                      "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|15,000,000|展示架|22, 114",
                       "Name":  "幻獸加油棒",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
+                      "Attrs":  "重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
                       "Price":  "15,000,000",
                       "Stall":  "展示架",
@@ -18855,7 +18858,10 @@
                       "Position":  "28, 58",
                       "FirstSeenSiteUpdate":  "2026-07-20 20:41",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  171442206,
+                      "PriceDiff":  2553318,
+                      "PrevTime":  "2026-07-20 20:51:30"
                   },
                   {
                       "Fingerprint":  "強化玻璃軟糖|道具|重量\u0026#xff1a; 1|1|168,888,888|沒有名字的路邊攤|28, 58",
@@ -18869,7 +18875,10 @@
                       "Position":  "28, 58",
                       "FirstSeenSiteUpdate":  "2026-07-20 20:41",
                       "IsNew":  true,
-                      "PriceDropped":  false
+                      "PriceDropped":  true,
+                      "OldPrice":  171442206,
+                      "PriceDiff":  2553318,
+                      "PrevTime":  "2026-07-20 20:51:30"
                   },
                   {
                       "Fingerprint":  "強化玻璃軟糖|道具|重量\u0026#xff1a; 1|1|171,442,206|沒有名字的路邊攤|28, 58",
@@ -20193,6 +20202,240 @@
                           }
                       ],
     "SoldItems":  [
+                      {
+                          "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|15,000,000|展示架|22, 114",
+                          "Name":  "幻獸加油棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "15,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "22, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|60,000,000|展示架|21, 82",
+                          "Name":  "超級經驗娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "60,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "21, 82",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30|1|1,000,000,000|換 飛鴿|19, 114",
+                          "Name":  "超級幻獸加油棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71174.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "1,000,000,000",
+                          "Stall":  "換 飛鴿",
+                          "Position":  "19, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|1,000,000,000|換 飛鴿|19, 114",
+                          "Name":  "超級經驗娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "1,000,000,000",
+                          "Stall":  "換 飛鴿",
+                          "Position":  "19, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                          "Name":  "幻獸加油棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "18,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "18, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                          "Name":  "幻獸加油棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "18,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "18, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "幻獸加油棒|道具|重量\u0026#xff1a; 30|1|18,000,000|展示架|18, 90",
+                          "Name":  "幻獸加油棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71123.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "18,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "18, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5|1|55,000,000|棍子比OK蹦便宜|15, 114",
+                          "Name":  "超級經驗娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71119.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "55,000,000",
+                          "Stall":  "棍子比OK蹦便宜",
+                          "Position":  "15, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|12,000,000|雜貨店|14, 90",
+                          "Name":  "高級戰鬥娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "12,000,000",
+                          "Stall":  "雜貨店",
+                          "Position":  "14, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|35,000,000|雜貨店|14, 90",
+                          "Name":  "寵物鞭打棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "35,000,000",
+                          "Stall":  "雜貨店",
+                          "Position":  "14, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "長效經驗娃娃|道具|重量\u0026#xff1a; 5|1|9,000,000|雜貨店|14, 90",
+                          "Name":  "長效經驗娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71118.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "9,000,000",
+                          "Stall":  "雜貨店",
+                          "Position":  "14, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "寵物鞭打棒|道具|重量\u0026#xff1a; 30|1|35,000,000|雜貨店|14, 90",
+                          "Name":  "寵物鞭打棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71163.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "35,000,000",
+                          "Stall":  "雜貨店",
+                          "Position":  "14, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "寵物愛心棒|道具|重量\u0026#xff1a; 30|1|55,555,555|展示架|13, 90",
+                          "Name":  "寵物愛心棒",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71162.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 30",
+                          "Qty":  "1",
+                          "Price":  "55,555,555",
+                          "Stall":  "展示架",
+                          "Position":  "13, 90",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10|1|3,000,000|展示架|10, 114",
+                          "Name":  "高級法力娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71159.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 10",
+                          "Qty":  "1",
+                          "Price":  "3,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "10, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級法力娃娃|道具|重量\u0026#xff1a; 10|1|3,000,000|展示架|10, 114",
+                          "Name":  "高級法力娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71159.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 10",
+                          "Qty":  "1",
+                          "Price":  "3,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "10, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|14,000,000|展示架|10, 114",
+                          "Name":  "高級戰鬥娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "14,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "10, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級戰鬥娃娃|道具|重量\u0026#xff1a; 5|1|14,000,000|展示架|10, 114",
+                          "Name":  "高級戰鬥娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71193.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 5",
+                          "Qty":  "1",
+                          "Price":  "14,000,000",
+                          "Stall":  "展示架",
+                          "Position":  "10, 114",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
+                      {
+                          "Fingerprint":  "高級生命娃娃|道具|重量\u0026#xff1a; 10|1|1,000,000|收星域6E|9, 58",
+                          "Name":  "高級生命娃娃",
+                          "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71158.webp",
+                          "Category":  "道具",
+                          "Attrs":  "重量\u0026#xff1a; 10",
+                          "Qty":  "1",
+                          "Price":  "1,000,000",
+                          "Stall":  "收星域6E",
+                          "Position":  "9, 58",
+                          "SoldAt":  "2026-07-20 20:52:48",
+                          "SiteUpdate":  "2026-07-20 20:41"
+                      },
                       {
                           "Fingerprint":  "到府收購券|道具|-|40|399,999|再下殺慢了就沒了|31, 66",
                           "Name":  "到府收購券",
