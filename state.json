@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-07-23 18:41:07",
+    "FetchedAt":  "2026-07-23 19:28:16",
     "SiteUpdated":  "2026-07-23 17:57",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -7159,10 +7159,7 @@
                       "Position":  "14, 106",
                       "FirstSeenSiteUpdate":  "2026-07-23 17:57",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  1792000000,
-                      "PriceDiff":  1785000000,
-                      "PrevTime":  "2026-07-23 14:22:04"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "力量調整藥水|道具|重量\u0026#xff1a; 0|1|150,000,000|沒有名字的路邊攤|14, 114",
@@ -10648,10 +10645,7 @@
                       "Position":  "17, 106",
                       "FirstSeenSiteUpdate":  "2026-07-23 17:57",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  6000000,
-                      "PriceDiff":  500000,
-                      "PrevTime":  "2026-07-23 14:22:04"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "血卵石原石|道具|重量\u0026#xff1a; 0|40|4,500,000|沒有名字的路邊攤|17, 106",
@@ -10665,10 +10659,7 @@
                       "Position":  "17, 106",
                       "FirstSeenSiteUpdate":  "2026-07-23 17:57",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  5000000,
-                      "PriceDiff":  500000,
-                      "PrevTime":  "2026-07-23 14:22:04"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "賤貓Mk2|寵物道具|等級\u0026#xff1a; 55 重量\u0026#xff1a; 392 智慧\u0026#xff1a; 20|48610|20,000,000|展示架|17, 114",
@@ -12334,10 +12325,7 @@
                       "Position":  "19, 98",
                       "FirstSeenSiteUpdate":  "2026-07-23 17:57",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  989855774,
-                      "PriceDiff":  849855774,
-                      "PrevTime":  "2026-07-23 14:22:04"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "綠色拇指姑娘|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 木|1|888,888,888|展示架|19, 114",
@@ -17479,10 +17467,6 @@
                   }
               ],
     "UpdateHistory":  [
-                          {
-                              "SiteUpdated":  "2026-07-22 19:16",
-                              "FetchedAt":  "2026-07-22 19:17:02"
-                          },
                           {
                               "SiteUpdated":  "2026-07-22 19:56",
                               "FetchedAt":  "2026-07-22 19:57:30"
