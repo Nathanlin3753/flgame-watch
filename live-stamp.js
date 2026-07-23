@@ -1,1 +1,1 @@
-﻿window.__last_market_update = "2026-07-23 12:35:10";
+﻿window.__last_market_update = "2026-07-23 13:21:29";
