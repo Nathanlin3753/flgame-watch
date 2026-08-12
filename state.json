@@ -1,11 +1,11 @@
 ﻿{
-    "FetchedAt":  "2026-08-12 09:11:25",
-    "SiteUpdated":  "2026-08-12 08:56",
+    "FetchedAt":  "2026-08-12 10:02:59",
+    "SiteUpdated":  "2026-08-12 09:38",
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
     "Category":  "",
     "Query":  "",
-    "Count":  906,
+    "Count":  812,
     "Items":  [
                   {
                       "Fingerprint":  "精巧的屠妖戰神斧|裝備|等級\u0026#xff1a; 96 重量\u0026#xff1a; 230 命中\u0026#xff1a; 349 傷害\u0026#xff1a; 1627 耐久\u0026#xff1a; 2308/2437 敏捷\u0026#xff1a; 16 智慧\u0026#xff1a; 20 戰士衝擊技能\u0026#xff1a; 15|1|2,000,000,000|-|9, 58",
@@ -274,11 +274,11 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "超級工作娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800|1|12,000,000|沒有名字的路邊攤|9, 106",
+                      "Fingerprint":  "超級工作娃娃|道具|等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800|1|12,000,000|沒有名字的路邊攤|9, 106",
                       "Name":  "超級工作娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71176.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800",
+                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800",
                       "Qty":  "1",
                       "Price":  "12,000,000",
                       "Stall":  "沒有名字的路邊攤",
@@ -288,13 +288,13 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "精煉的羊皮外套|裝備|等級\u0026#xff1a; 1 重量\u0026#xff1a; 50 防率\u0026#xff1a; 17 防禦\u0026#xff1a; 100 耐久\u0026#xff1a; 1006/1006 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 32 體質\u0026#xff1a; 31 光抗\u0026#xff1a; 507|1|300,000,000|沒有名字的路邊攤|9, 106",
-                      "Name":  "精煉的羊皮外套",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/31009.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 50 防率\u0026#xff1a; 17 防禦\u0026#xff1a; 100 耐久\u0026#xff1a; 1006/1006 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 32 體質\u0026#xff1a; 31 光抗\u0026#xff1a; 507",
+                      "Fingerprint":  "超級工作娃娃|道具|等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800|1|12,000,000|沒有名字的路邊攤|9, 106",
+                      "Name":  "超級工作娃娃",
+                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71176.webp",
+                      "Category":  "道具",
+                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800",
                       "Qty":  "1",
-                      "Price":  "300,000,000",
+                      "Price":  "12,000,000",
                       "Stall":  "沒有名字的路邊攤",
                       "Position":  "9, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
@@ -302,13 +302,27 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "玻璃種子|道具|重量\u0026#xff1a; 30|40|94,500,000|沒有名字的路邊攤|9, 106",
-                      "Name":  "玻璃種子",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71131.webp",
+                      "Fingerprint":  "超級工作娃娃|道具|等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800|1|12,000,000|沒有名字的路邊攤|9, 106",
+                      "Name":  "超級工作娃娃",
+                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71176.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 30",
-                      "Qty":  "40",
-                      "Price":  "94,500,000",
+                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800",
+                      "Qty":  "1",
+                      "Price":  "12,000,000",
+                      "Stall":  "沒有名字的路邊攤",
+                      "Position":  "9, 106",
+                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
+                      "IsNew":  false,
+                      "PriceDropped":  false
+                  },
+                  {
+                      "Fingerprint":  "超級工作娃娃|道具|等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800|1|12,000,000|沒有名字的路邊攤|9, 106",
+                      "Name":  "超級工作娃娃",
+                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71176.webp",
+                      "Category":  "道具",
+                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 1800/1800",
+                      "Qty":  "1",
+                      "Price":  "12,000,000",
                       "Stall":  "沒有名字的路邊攤",
                       "Position":  "9, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
@@ -1632,227 +1646,17 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "幻獸牢籠|道具|重量\u0026#xff1a; 30|5|4,000,000|海洋 亞里斯 女巫|11, 106",
+                      "Fingerprint":  "幻獸牢籠|道具|重量\u0026#xff1a; 30|5|150,994,944|海洋 亞里斯 女巫|11, 106",
                       "Name":  "幻獸牢籠",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71169.webp",
                       "Category":  "道具",
                       "Attrs":  "重量\u0026#xff1a; 30",
                       "Qty":  "5",
-                      "Price":  "4,000,000",
+                      "Price":  "150,994,944",
                       "Stall":  "海洋 亞里斯 女巫",
                       "Position":  "11, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|11, 114",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "11, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -3662,286 +3466,6 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "金敏兔可樂379|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3669 屬性\u0026#xff1a; 金|1|1,800,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "金敏兔可樂379",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51141.webp",
-                      "Category":  "稀有寵物",
-                      "Attrs":  "\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3669 屬性\u0026#xff1a; 金",
-                      "Qty":  "1",
-                      "Price":  "1,800,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "雙開.光力662|普通寵物|等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 5044 屬性\u0026#xff1a; 光|1|1,800,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "雙開.光力662",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51117.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 5044 屬性\u0026#xff1a; 光",
-                      "Qty":  "1",
-                      "Price":  "1,800,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "寵物降級可樂|道具|重量\u0026#xff1a; 50|1|60,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "寵物降級可樂",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71234.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 50",
-                      "Qty":  "1",
-                      "Price":  "60,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "寵物降級可樂|道具|重量\u0026#xff1a; 50|1|60,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "寵物降級可樂",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71234.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 50",
-                      "Qty":  "1",
-                      "Price":  "60,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "寵物降級可樂|道具|重量\u0026#xff1a; 50|1|60,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "寵物降級可樂",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71234.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 50",
-                      "Qty":  "1",
-                      "Price":  "60,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神靴|裝備|等級\u0026#xff1a; 92 重量\u0026#xff1a; 100 防率\u0026#xff1a; 84 防禦\u0026#xff1a; 454 耐久\u0026#xff1a; 535/535 力量\u0026#xff1a; 34 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 35 生命回復速度\u0026#xff1a; 100|1|400,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "改造的龍神靴",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30633.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 92 重量\u0026#xff1a; 100 防率\u0026#xff1a; 84 防禦\u0026#xff1a; 454 耐久\u0026#xff1a; 535/535 力量\u0026#xff1a; 34 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 35 生命回復速度\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "400,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "屬性穩定劑|道具|重量\u0026#xff1a; 10|2|25,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "屬性穩定劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50396.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 10",
-                      "Qty":  "2",
-                      "Price":  "25,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "可樂火智401|普通寵物|等級\u0026#xff1a; 81 重量\u0026#xff1a; 10 HP\u0026#xff1a; 4517 屬性\u0026#xff1a; 火|1|250,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "可樂火智401",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51118.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 81 重量\u0026#xff1a; 10 HP\u0026#xff1a; 4517 屬性\u0026#xff1a; 火",
-                      "Qty":  "1",
-                      "Price":  "250,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "綠藻水母|普通寵物|等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 189 屬性\u0026#xff1a; 木|1|200,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "綠藻水母",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51118.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 189 屬性\u0026#xff1a; 木",
-                      "Qty":  "1",
-                      "Price":  "200,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "美白水母|普通寵物|等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 201 屬性\u0026#xff1a; 光|1|200,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "美白水母",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51118.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 201 屬性\u0026#xff1a; 光",
-                      "Qty":  "1",
-                      "Price":  "200,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "白毛猿光智322|普通寵物|等級\u0026#xff1a; 70 重量\u0026#xff1a; 10 HP\u0026#xff1a; 2268 屬性\u0026#xff1a; 光|1|100,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "白毛猿光智322",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51011.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 70 重量\u0026#xff1a; 10 HP\u0026#xff1a; 2268 屬性\u0026#xff1a; 光",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "奧秘賜福智386|普通寵物|等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3266 屬性\u0026#xff1a; 火|1|688,888,888|沒有名字的路邊攤|14, 114",
-                      "Name":  "奧秘賜福智386",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51094.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3266 屬性\u0026#xff1a; 火",
-                      "Qty":  "1",
-                      "Price":  "688,888,888",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "尼迅阿撻古|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 火|1|588,888,888|沒有名字的路邊攤|14, 114",
-                      "Name":  "尼迅阿撻古",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51142.webp",
-                      "Category":  "稀有寵物",
-                      "Attrs":  "\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 火",
-                      "Qty":  "1",
-                      "Price":  "588,888,888",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "木智253.0降|普通寵物|-|1|100,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "木智253.0降",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51032.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "-",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "藍鳳凰|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 水|1|50,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "藍鳳凰",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51032.webp",
-                      "Category":  "稀有寵物",
-                      "Attrs":  "\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 水",
-                      "Qty":  "1",
-                      "Price":  "50,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "謎之書|道具|等級\u0026#xff1a; 1 重量\u0026#xff1a; 30|1|80,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "謎之書",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50570.webp",
-                      "Category":  "道具",
-                      "Attrs":  "等級\u0026#xff1a; 1 重量\u0026#xff1a; 30",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "謎之書|道具|等級\u0026#xff1a; 15 重量\u0026#xff1a; 30|1|80,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "謎之書",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50570.webp",
-                      "Category":  "道具",
-                      "Attrs":  "等級\u0026#xff1a; 15 重量\u0026#xff1a; 30",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "謎之書|道具|等級\u0026#xff1a; 65 重量\u0026#xff1a; 30|1|80,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "謎之書",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50570.webp",
-                      "Category":  "道具",
-                      "Attrs":  "等級\u0026#xff1a; 65 重量\u0026#xff1a; 30",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "謎之書|道具|等級\u0026#xff1a; 65 重量\u0026#xff1a; 30|1|80,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "謎之書",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50570.webp",
-                      "Category":  "道具",
-                      "Attrs":  "等級\u0026#xff1a; 65 重量\u0026#xff1a; 30",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "謎之樂器|道具|等級\u0026#xff1a; 56 重量\u0026#xff1a; 50|1|200,000,000|沒有名字的路邊攤|14, 114",
-                      "Name":  "謎之樂器",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50593.webp",
-                      "Category":  "道具",
-                      "Attrs":  "等級\u0026#xff1a; 56 重量\u0026#xff1a; 50",
-                      "Qty":  "1",
-                      "Price":  "200,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "14, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
                       "Fingerprint":  "白龍公主|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 1 重量\u0026#xff1a; 10 HP\u0026#xff1a; 55 屬性\u0026#xff1a; 光|1|850,000,000|魔幣寵物|15, 82",
                       "Name":  "白龍公主",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51121.webp",
@@ -4218,7 +3742,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4232,7 +3756,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4246,7 +3770,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4260,7 +3784,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4274,7 +3798,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4288,7 +3812,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4302,7 +3826,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4316,7 +3840,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4330,7 +3854,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4344,7 +3868,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4358,7 +3882,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4372,7 +3896,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4386,7 +3910,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4400,7 +3924,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4414,7 +3938,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4428,7 +3952,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4442,7 +3966,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4456,7 +3980,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4470,7 +3994,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -4484,7 +4008,7 @@
                       "Stall":  "一些小物",
                       "Position":  "15, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -5048,17 +4572,17 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "貪心哥布林卡|道具|重量\u0026#xff1a; 5|1|5,000,000|雞可換4滿月 鴿|16, 114",
+                      "Fingerprint":  "貪心哥布林卡|道具|重量\u0026#xff1a; 5|1|1,262,485,534|雞可換4滿月 鴿|16, 114",
                       "Name":  "貪心哥布林卡",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/61772.webp",
                       "Category":  "道具",
                       "Attrs":  "重量\u0026#xff1a; 5",
                       "Qty":  "1",
-                      "Price":  "5,000,000",
+                      "Price":  "1,262,485,534",
                       "Stall":  "雞可換4滿月 鴿",
                       "Position":  "16, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-11 22:49",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -5748,17 +5272,17 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "黑鋼技能傷害娃娃|道具|重量\u0026#xff1a; 0 耐用度\u0026#xff1a; 6/6|1|3,500,000|沒有名字的路邊攤|18, 82",
+                      "Fingerprint":  "黑鋼技能傷害娃娃|道具|重量\u0026#xff1a; 0 耐用度\u0026#xff1a; 6/6|1|1,742,733,312|沒有名字的路邊攤|18, 82",
                       "Name":  "黑鋼技能傷害娃娃",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/100001.webp",
                       "Category":  "道具",
                       "Attrs":  "重量\u0026#xff1a; 0 耐用度\u0026#xff1a; 6/6",
                       "Qty":  "1",
-                      "Price":  "3,500,000",
+                      "Price":  "1,742,733,312",
                       "Stall":  "沒有名字的路邊攤",
                       "Position":  "18, 82",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
+                      "IsNew":  true,
                       "PriceDropped":  false
                   },
                   {
@@ -6252,8 +5776,8 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "精巧的奧林斧|裝備|等級\u0026#xff1a; 80 重量\u0026#xff1a; 180 命中\u0026#xff1a; 154 傷害\u0026#xff1a; 481 耐久\u0026#xff1a; 1021/1021 力量\u0026#xff1a; 13 HP\u0026#xff1a; 332 戰士連擊技能\u0026#xff1a; 10|1|10,000,000|沒有名字的路邊攤|18, 98",
-                      "Name":  "精巧的奧林斧",
+                      "Fingerprint":  "精巧的奧林戰斧|裝備|等級\u0026#xff1a; 80 重量\u0026#xff1a; 180 命中\u0026#xff1a; 154 傷害\u0026#xff1a; 481 耐久\u0026#xff1a; 1021/1021 力量\u0026#xff1a; 13 HP\u0026#xff1a; 332 戰士連擊技能\u0026#xff1a; 10|1|10,000,000|沒有名字的路邊攤|18, 98",
+                      "Name":  "精巧的奧林戰斧",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/40346.webp",
                       "Category":  "裝備",
                       "Attrs":  "等級\u0026#xff1a; 80 重量\u0026#xff1a; 180 命中\u0026#xff1a; 154 傷害\u0026#xff1a; 481 耐久\u0026#xff1a; 1021/1021 力量\u0026#xff1a; 13 HP\u0026#xff1a; 332 戰士連擊技能\u0026#xff1a; 10",
@@ -6261,7 +5785,7 @@
                       "Price":  "10,000,000",
                       "Stall":  "沒有名字的路邊攤",
                       "Position":  "18, 98",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:56",
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
                       "IsNew":  true,
                       "PriceDropped":  false
                   },
@@ -6458,7 +5982,7 @@
                       "Stall":  "換 飛鴿",
                       "Position":  "18, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -6738,286 +6262,6 @@
                       "Stall":  "龍裝專賣-200書",
                       "Position":  "19, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "寵物降級雞精|道具|重量\u0026#xff1a; 50|1|1,200,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "寵物降級雞精",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71251.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 50",
-                      "Qty":  "1",
-                      "Price":  "1,200,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "強化玻璃軟糖|道具|重量\u0026#xff1a; 1|1|180,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "強化玻璃軟糖",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71253.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 1",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "肉墊娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|5,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "肉墊娃娃",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71141.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6",
-                      "Qty":  "1",
-                      "Price":  "5,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-08 09:50",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "界限突破娃娃|道具|重量\u0026#xff1a; 3 耐用度\u0026#xff1a; 1/6|1|12,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "界限突破娃娃",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50741.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 3 耐用度\u0026#xff1a; 1/6",
-                      "Qty":  "1",
-                      "Price":  "12,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "火智406|普通寵物|等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3156 屬性\u0026#xff1a; 火|1|250,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "火智406",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51036.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3156 屬性\u0026#xff1a; 火",
-                      "Qty":  "1",
-                      "Price":  "250,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魅力調整藥劑|道具|重量\u0026#xff1a; 0|1|80,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "魅力調整藥劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71281.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "力量調整藥劑|道具|重量\u0026#xff1a; 0|1|80,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "力量調整藥劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71276.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "1",
-                      "Price":  "80,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "體質調整藥劑|道具|重量\u0026#xff1a; 0|1|82,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "體質調整藥劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71277.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "1",
-                      "Price":  "82,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "智慧調整藥劑|道具|重量\u0026#xff1a; 0|1|82,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "智慧調整藥劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71279.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "1",
-                      "Price":  "82,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-09 09:24",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "幸運調整藥劑|道具|重量\u0026#xff1a; 0|1|75,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "幸運調整藥劑",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71280.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "1",
-                      "Price":  "75,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "金智敏309/168|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3027 屬性\u0026#xff1a; 金|1|1,500,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "金智敏309/168",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51141.webp",
-                      "Category":  "稀有寵物",
-                      "Attrs":  "\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 75 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3027 屬性\u0026#xff1a; 金",
-                      "Qty":  "1",
-                      "Price":  "1,500,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "體敏344/168|稀有寵物|\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 86 重量\u0026#xff1a; 10 HP\u0026#xff1a; 13292 屬性\u0026#xff1a; 暗|1|1,600,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "體敏344/168",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51139.webp",
-                      "Category":  "稀有寵物",
-                      "Attrs":  "\u0026#31232;\u0026#26377; 等級\u0026#xff1a; 86 重量\u0026#xff1a; 10 HP\u0026#xff1a; 13292 屬性\u0026#xff1a; 暗",
-                      "Qty":  "1",
-                      "Price":  "1,600,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "金敏智242/176|普通寵物|等級\u0026#xff1a; 72 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3079 屬性\u0026#xff1a; 金|1|250,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "金敏智242/176",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51113.webp",
-                      "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 72 重量\u0026#xff1a; 10 HP\u0026#xff1a; 3079 屬性\u0026#xff1a; 金",
-                      "Qty":  "1",
-                      "Price":  "250,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-11 08:27",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|15|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "15",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "鳳梨寶箱鑰匙|道具|重量\u0026#xff1a; 0|40|8,000,000|沒有名字的路邊攤|19, 66",
-                      "Name":  "鳳梨寶箱鑰匙",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50977.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "8,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "19, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-07 21:37",
                       "IsNew":  false,
                       "PriceDropped":  false
                   },
@@ -7890,20 +7134,6 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "改造的巨魔之手|裝備|等級\u0026#xff1a; 52 重量\u0026#xff1a; 50 防率\u0026#xff1a; 75 防禦\u0026#xff1a; 148 耐久\u0026#xff1a; 549/549 力量\u0026#xff1a; 23 敏捷\u0026#xff1a; 18 智慧\u0026#xff1a; 23 食品提升\u0026#xff1a; 66|1|15,000,000|:D|19, 114",
-                      "Name":  "改造的巨魔之手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30333.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 52 重量\u0026#xff1a; 50 防率\u0026#xff1a; 75 防禦\u0026#xff1a; 148 耐久\u0026#xff1a; 549/549 力量\u0026#xff1a; 23 敏捷\u0026#xff1a; 18 智慧\u0026#xff1a; 23 食品提升\u0026#xff1a; 66",
-                      "Qty":  "1",
-                      "Price":  "15,000,000",
-                      "Stall":  ":D",
-                      "Position":  "19, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
                       "Fingerprint":  "精巧的菲洛爾算盤|裝備|等級\u0026#xff1a; 64 重量\u0026#xff1a; 90 命中\u0026#xff1a; 426 傷害\u0026#xff1a; 798 耐久\u0026#xff1a; 2547/2547 力量\u0026#xff1a; 8 敏捷\u0026#xff1a; 6 幸運\u0026#xff1a; 5|1|300,000,000|:D|19, 114",
                       "Name":  "精巧的菲洛爾算盤",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/40750.webp",
@@ -7942,7 +7172,7 @@
                       "Stall":  ":D",
                       "Position":  "19, 114",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8025,272 +7255,6 @@
                       "Price":  "4,000,000",
                       "Stall":  ":D",
                       "Position":  "19, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 263 耐久\u0026#xff1a; 424/424 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 33 幸運\u0026#xff1a; 21 藥效提升\u0026#xff1a; 100|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 263 耐久\u0026#xff1a; 424/424 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 33 幸運\u0026#xff1a; 21 藥效提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 104 重量\u0026#xff1a; 50 防率\u0026#xff1a; 171 防禦\u0026#xff1a; 256 耐久\u0026#xff1a; 465/465 力量\u0026#xff1a; 34 智慧\u0026#xff1a; 33 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 102|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 104 重量\u0026#xff1a; 50 防率\u0026#xff1a; 171 防禦\u0026#xff1a; 256 耐久\u0026#xff1a; 465/465 力量\u0026#xff1a; 34 智慧\u0026#xff1a; 33 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 93 防禦\u0026#xff1a; 395 耐久\u0026#xff1a; 297/297 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 26 幸運\u0026#xff1a; 20 藥效提升\u0026#xff1a; 102|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 93 防禦\u0026#xff1a; 395 耐久\u0026#xff1a; 297/297 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 26 幸運\u0026#xff1a; 20 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 221 耐久\u0026#xff1a; 473/473 力量\u0026#xff1a; 33 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 34 藥效提升\u0026#xff1a; 101|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 221 耐久\u0026#xff1a; 473/473 力量\u0026#xff1a; 33 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 34 藥效提升\u0026#xff1a; 101",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 93 防禦\u0026#xff1a; 314 耐久\u0026#xff1a; 381/381 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 26 體質\u0026#xff1a; 27 藥效提升\u0026#xff1a; 102|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 93 防禦\u0026#xff1a; 314 耐久\u0026#xff1a; 381/381 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 26 體質\u0026#xff1a; 27 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 95 防禦\u0026#xff1a; 269 耐久\u0026#xff1a; 345/345 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 25 幸運\u0026#xff1a; 21 藥效提升\u0026#xff1a; 101|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 95 防禦\u0026#xff1a; 269 耐久\u0026#xff1a; 345/345 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 25 幸運\u0026#xff1a; 21 藥效提升\u0026#xff1a; 101",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 153 防禦\u0026#xff1a; 216 耐久\u0026#xff1a; 460/460 智慧\u0026#xff1a; 34 體質\u0026#xff1a; 27 食品提升\u0026#xff1a; 101 藥效提升\u0026#xff1a; 102|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 153 防禦\u0026#xff1a; 216 耐久\u0026#xff1a; 460/460 智慧\u0026#xff1a; 34 體質\u0026#xff1a; 27 食品提升\u0026#xff1a; 101 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 91 防禦\u0026#xff1a; 384 耐久\u0026#xff1a; 425/425 力量\u0026#xff1a; 35 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 102|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 91 防禦\u0026#xff1a; 384 耐久\u0026#xff1a; 425/425 力量\u0026#xff1a; 35 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 98 重量\u0026#xff1a; 50 防率\u0026#xff1a; 88 防禦\u0026#xff1a; 357 耐久\u0026#xff1a; 559/559 智慧\u0026#xff1a; 35 體質\u0026#xff1a; 27 降低遇敵機率\u0026#xff1a; 100 藥效提升\u0026#xff1a; 101|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 98 重量\u0026#xff1a; 50 防率\u0026#xff1a; 88 防禦\u0026#xff1a; 357 耐久\u0026#xff1a; 559/559 智慧\u0026#xff1a; 35 體質\u0026#xff1a; 27 降低遇敵機率\u0026#xff1a; 100 藥效提升\u0026#xff1a; 101",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 316 耐久\u0026#xff1a; 457/457 力量\u0026#xff1a; 34 敏捷\u0026#xff1a; 25 幸運\u0026#xff1a; 21 食品提升\u0026#xff1a; 100|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 123 防禦\u0026#xff1a; 316 耐久\u0026#xff1a; 457/457 力量\u0026#xff1a; 34 敏捷\u0026#xff1a; 25 幸運\u0026#xff1a; 21 食品提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 173 防禦\u0026#xff1a; 438 耐久\u0026#xff1a; 343/343 力量\u0026#xff1a; 34 智慧\u0026#xff1a; 35 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 100|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 173 防禦\u0026#xff1a; 438 耐久\u0026#xff1a; 343/343 力量\u0026#xff1a; 34 智慧\u0026#xff1a; 35 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 169 防禦\u0026#xff1a; 263 耐久\u0026#xff1a; 528/528 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 33 降低遇敵機率\u0026#xff1a; 102 食品提升\u0026#xff1a; 102|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 169 防禦\u0026#xff1a; 263 耐久\u0026#xff1a; 528/528 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 33 降低遇敵機率\u0026#xff1a; 102 食品提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 160 防禦\u0026#xff1a; 226 耐久\u0026#xff1a; 500/500 敏捷\u0026#xff1a; 26 體質\u0026#xff1a; 26 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 102|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 160 防禦\u0026#xff1a; 226 耐久\u0026#xff1a; 500/500 敏捷\u0026#xff1a; 26 體質\u0026#xff1a; 26 食品提升\u0026#xff1a; 102 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 137 防禦\u0026#xff1a; 302 耐久\u0026#xff1a; 370/370 敏捷\u0026#xff1a; 25 體質\u0026#xff1a; 25 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 137 防禦\u0026#xff1a; 302 耐久\u0026#xff1a; 370/370 敏捷\u0026#xff1a; 25 體質\u0026#xff1a; 25 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 148 防禦\u0026#xff1a; 261 耐久\u0026#xff1a; 459/459 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 33 食品提升\u0026#xff1a; 100|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 148 防禦\u0026#xff1a; 261 耐久\u0026#xff1a; 459/459 敏捷\u0026#xff1a; 26 智慧\u0026#xff1a; 33 食品提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 140 防禦\u0026#xff1a; 219 耐久\u0026#xff1a; 519/519 智慧\u0026#xff1a; 33 體質\u0026#xff1a; 27 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 102|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 140 防禦\u0026#xff1a; 219 耐久\u0026#xff1a; 519/519 智慧\u0026#xff1a; 33 體質\u0026#xff1a; 27 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 102",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 92 防禦\u0026#xff1a; 235 耐久\u0026#xff1a; 412/412 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 35 藥效提升\u0026#xff1a; 100|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 92 防禦\u0026#xff1a; 235 耐久\u0026#xff1a; 412/412 敏捷\u0026#xff1a; 27 智慧\u0026#xff1a; 35 藥效提升\u0026#xff1a; 100",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 97 防禦\u0026#xff1a; 319 耐久\u0026#xff1a; 231/231 敏捷\u0026#xff1a; 25 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 101|1|180,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 97 防禦\u0026#xff1a; 319 耐久\u0026#xff1a; 231/231 敏捷\u0026#xff1a; 25 降低遇敵機率\u0026#xff1a; 101 食品提升\u0026#xff1a; 100 藥效提升\u0026#xff1a; 101",
-                      "Qty":  "1",
-                      "Price":  "180,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "改造的龍神護手|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 100 防禦\u0026#xff1a; 309 耐久\u0026#xff1a; 479/479 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 25 藥效提升\u0026#xff1a; 101|1|100,000,000|龍裝專賣-龍手|20, 58",
-                      "Name":  "改造的龍神護手",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/30340.webp",
-                      "Category":  "裝備",
-                      "Attrs":  "等級\u0026#xff1a; 100 重量\u0026#xff1a; 50 防率\u0026#xff1a; 100 防禦\u0026#xff1a; 309 耐久\u0026#xff1a; 479/479 力量\u0026#xff1a; 35 敏捷\u0026#xff1a; 25 藥效提升\u0026#xff1a; 101",
-                      "Qty":  "1",
-                      "Price":  "100,000,000",
-                      "Stall":  "龍裝專賣-龍手",
-                      "Position":  "20, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
                       "PriceDropped":  false
@@ -8586,7 +7550,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8600,7 +7564,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8614,7 +7578,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8628,7 +7592,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8642,7 +7606,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8656,7 +7620,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8670,7 +7634,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8684,7 +7648,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8698,7 +7662,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8712,7 +7676,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8726,7 +7690,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8740,7 +7704,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8754,7 +7718,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8768,7 +7732,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8782,7 +7746,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8796,7 +7760,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8810,7 +7774,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8824,7 +7788,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8838,7 +7802,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -8852,7 +7816,7 @@
                       "Stall":  "小黑羊專賣~",
                       "Position":  "20, 106",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:56",
-                      "IsNew":  true,
+                      "IsNew":  false,
                       "PriceDropped":  false
                   },
                   {
@@ -10144,16 +9108,16 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "紅蓮鯉魚敏553|普通寵物|等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 6126 屬性\u0026#xff1a; 火|1|850,000,000|玩具、寵物|21, 114",
+                      "Fingerprint":  "紅蓮鯉魚敏553|普通寵物|等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 238 屬性\u0026#xff1a; 火|1|850,000,000|玩具、寵物|21, 114",
                       "Name":  "紅蓮鯉魚敏553",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51116.webp",
                       "Category":  "普通寵物",
-                      "Attrs":  "等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 6126 屬性\u0026#xff1a; 火",
+                      "Attrs":  "等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 238 屬性\u0026#xff1a; 火",
                       "Qty":  "1",
                       "Price":  "850,000,000",
                       "Stall":  "玩具、寵物",
                       "Position":  "21, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:56",
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
                       "IsNew":  true,
                       "PriceDropped":  false
                   },
@@ -10186,21 +9150,18 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "金摳拉金力645|普通寵物|等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 4745 屬性\u0026#xff1a; 金|1|1,308,622,848|玩具、寵物|21, 114",
+                      "Fingerprint":  "金摳拉金力645|普通寵物|等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 4745 屬性\u0026#xff1a; 金|1|1,400,000,000|玩具、寵物|21, 114",
                       "Name":  "金摳拉金力645",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/51071.webp",
                       "Category":  "普通寵物",
                       "Attrs":  "等級\u0026#xff1a; 80 重量\u0026#xff1a; 10 HP\u0026#xff1a; 4745 屬性\u0026#xff1a; 金",
                       "Qty":  "1",
-                      "Price":  "1,308,622,848",
+                      "Price":  "1,400,000,000",
                       "Stall":  "玩具、寵物",
                       "Position":  "21, 114",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:56",
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
                       "IsNew":  true,
-                      "PriceDropped":  true,
-                      "OldPrice":  1400000000,
-                      "PriceDiff":  91377152,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "改造的龍之鍊|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 35 耐久\u0026#xff1a; 431/431 智慧\u0026#xff1a; 24 體質\u0026#xff1a; 24 食品提升\u0026#xff1a; 106 戰鬥金錢\u0026#xff1a; 54|42991|150,000,000|龍裝專賣-龍鍊|22, 58",
@@ -10539,272 +9500,6 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
-                      "Fingerprint":  "魔晶石|道具|重量\u0026#xff1a; 0|40|24,000,000|沒有名字的路邊攤|22, 106",
-                      "Name":  "魔晶石",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/50857.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
-                      "Qty":  "40",
-                      "Price":  "24,000,000",
-                      "Stall":  "沒有名字的路邊攤",
-                      "Position":  "22, 106",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  false
-                  },
-                  {
                       "Fingerprint":  "木槌魔石|道具|重量\u0026#xff1a; 0|1|25,000,000|超+超經玩具木石-|22, 114",
                       "Name":  "木槌魔石",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/100020.webp",
@@ -10875,7 +9570,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  43000000,
                       "PriceDiff":  1000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PrevTime":  "2026-08-12 09:37:18"
                   },
                   {
                       "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|45,000,000|超+超經玩具木石-|22, 114",
@@ -10934,7 +9629,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  43000000,
                       "PriceDiff":  1000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PrevTime":  "2026-08-12 09:37:18"
                   },
                   {
                       "Fingerprint":  "超級幻獸加油棒|道具|重量\u0026#xff1a; 30 耐用度\u0026#xff1a; 6/6|1|42,000,000|超+超經玩具木石-|22, 114",
@@ -10951,7 +9646,7 @@
                       "PriceDropped":  true,
                       "OldPrice":  43000000,
                       "PriceDiff":  1000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PrevTime":  "2026-08-12 09:37:18"
                   },
                   {
                       "Fingerprint":  "超級經驗娃娃|道具|重量\u0026#xff1a; 5 耐用度\u0026#xff1a; 6/6|1|45,000,000|超+超經玩具木石-|22, 114",
@@ -11444,18 +10139,21 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "寵物降級蔘湯|道具|重量\u0026#xff1a; 50|2|2,000,000,000|出清~來鴿價|23, 66",
+                      "Fingerprint":  "寵物降級蔘湯|道具|重量\u0026#xff1a; 50|2|898,891,776|出清~來鴿價|23, 66",
                       "Name":  "寵物降級蔘湯",
                       "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71252.webp",
                       "Category":  "道具",
                       "Attrs":  "重量\u0026#xff1a; 50",
                       "Qty":  "2",
-                      "Price":  "2,000,000,000",
+                      "Price":  "898,891,776",
                       "Stall":  "出清~來鴿價",
                       "Position":  "23, 66",
-                      "FirstSeenSiteUpdate":  "2026-08-11 20:37",
-                      "IsNew":  false,
-                      "PriceDropped":  false
+                      "FirstSeenSiteUpdate":  "2026-08-12 09:38",
+                      "IsNew":  true,
+                      "PriceDropped":  true,
+                      "OldPrice":  2000000000,
+                      "PriceDiff":  1101108224,
+                      "PrevTime":  "2026-08-12 09:37:18"
                   },
                   {
                       "Fingerprint":  "改造的龍之戒|裝備|等級\u0026#xff1a; 100 重量\u0026#xff1a; 20 耐久\u0026#xff1a; 414/414 敏捷\u0026#xff1a; 22 智慧\u0026#xff1a; 21 提高遇敵機率\u0026#xff1a; 101 藥效提升\u0026#xff1a; 102|1|100,000,000|龍裝專賣-改造戒|24, 58",
@@ -12438,13 +11136,13 @@
                       "PriceDropped":  false
                   },
                   {
-                      "Fingerprint":  "元素神啟書|道具|重量\u0026#xff1a; 0|40|250,000,000|星域月光元素書|31, 58",
-                      "Name":  "元素神啟書",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/100018.webp",
+                      "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
+                      "Name":  "寵物甜心糖",
+                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71125.webp",
                       "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 0",
+                      "Attrs":  "重量\u0026#xff1a; 5",
                       "Qty":  "40",
-                      "Price":  "250,000,000",
+                      "Price":  "2,000,000",
                       "Stall":  "星域月光元素書",
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
@@ -12463,10 +11161,7 @@
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
@@ -12480,10 +11175,7 @@
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
@@ -12497,10 +11189,7 @@
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
@@ -12514,10 +11203,7 @@
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
@@ -12531,27 +11217,7 @@
                       "Position":  "31, 58",
                       "FirstSeenSiteUpdate":  "2026-08-12 08:14",
                       "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
-                  },
-                  {
-                      "Fingerprint":  "寵物甜心糖|道具|重量\u0026#xff1a; 5|40|2,000,000|星域月光元素書|31, 58",
-                      "Name":  "寵物甜心糖",
-                      "ImgUrl":  "https://www.flgame.cloud/static/records/item-icons/71125.webp",
-                      "Category":  "道具",
-                      "Attrs":  "重量\u0026#xff1a; 5",
-                      "Qty":  "40",
-                      "Price":  "2,000,000",
-                      "Stall":  "星域月光元素書",
-                      "Position":  "31, 58",
-                      "FirstSeenSiteUpdate":  "2026-08-12 08:14",
-                      "IsNew":  false,
-                      "PriceDropped":  true,
-                      "OldPrice":  512000000,
-                      "PriceDiff":  510000000,
-                      "PrevTime":  "2026-08-12 08:45:34"
+                      "PriceDropped":  false
                   },
                   {
                       "Fingerprint":  "千年大還丹|烹飪調配|重量\u0026#xff1a; 50|20|1,555,555|心痛大還海洋|31, 66",
@@ -12724,10 +11390,6 @@
               ],
     "UpdateHistory":  [
                           {
-                              "SiteUpdated":  "2026-08-11 09:12",
-                              "FetchedAt":  "2026-08-11 09:19:09"
-                          },
-                          {
                               "SiteUpdated":  "2026-08-11 19:53",
                               "FetchedAt":  "2026-08-11 20:20:22"
                           },
@@ -12750,6 +11412,10 @@
                           {
                               "SiteUpdated":  "2026-08-12 08:56",
                               "FetchedAt":  "2026-08-12 09:11:25"
+                          },
+                          {
+                              "SiteUpdated":  "2026-08-12 09:38",
+                              "FetchedAt":  "2026-08-12 10:02:59"
                           }
                       ]
 }
