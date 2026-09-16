@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-09-16 20:28:13",
+    "FetchedAt":  "2026-09-16 20:53:24",
     "SiteUpdated":  null,
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -13,10 +13,6 @@
 
               ],
     "UpdateHistory":  [
-                          {
-                              "SiteUpdated":  "2026-09-15 20:26",
-                              "FetchedAt":  "2026-09-15 20:28:50"
-                          },
                           {
                               "SiteUpdated":  "2026-09-15 21:09",
                               "FetchedAt":  "2026-09-15 21:19:55"
