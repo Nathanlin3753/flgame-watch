@@ -1,5 +1,5 @@
 ﻿{
-    "FetchedAt":  "2026-09-16 22:59:23",
+    "FetchedAt":  "2026-09-17 18:09:34",
     "SiteUpdated":  null,
     "Url":  "https://www.flgame.cloud/silver/?market=taiwan-jien",
     "Market":  "taiwan-jien",
@@ -13,45 +13,6 @@
 
               ],
     "UpdateHistory":  [
-                          {
-                              "SiteUpdated":  "2026-09-16 08:49",
-                              "FetchedAt":  "2026-09-16 09:32:41"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 09:32",
-                              "FetchedAt":  "2026-09-16 09:58:34"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 10:14",
-                              "FetchedAt":  "2026-09-16 10:24:27"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 10:57",
-                              "FetchedAt":  "2026-09-16 11:15:26"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 11:39",
-                              "FetchedAt":  "2026-09-16 11:41:17"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 12:20",
-                              "FetchedAt":  "2026-09-16 12:32:16"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 13:01",
-                              "FetchedAt":  "2026-09-16 13:23:00"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 13:41",
-                              "FetchedAt":  "2026-09-16 13:48:36"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 16:10",
-                              "FetchedAt":  "2026-09-16 16:19:02"
-                          },
-                          {
-                              "SiteUpdated":  "2026-09-16 16:50",
-                              "FetchedAt":  "2026-09-16 17:09:36"
-                          }
+
                       ]
 }
