@@ -1,2 +1,2 @@
-﻿window.__last_market_update = "2026-09-21 20:25:01";
-window.__last_checked_at = "2026-09-21 20:25:01";
+﻿window.__last_market_update = "2026-09-21 20:51:51";
+window.__last_checked_at = "2026-09-21 20:51:51";
