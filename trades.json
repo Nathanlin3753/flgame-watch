@@ -3,28 +3,6 @@
     "Market":  "taiwan-jien",
     "Trades":  [
                    {
-                       "Id":  "eba9f2c0404f995b",
-                       "VariantKey":  "龍之戒|裝備|等級： 100 耐久： 500/500 體質： 7 食品提升： 83 戰鬥經驗： 85",
-                       "ListingKey":  "龍之戒|裝備|等級： 100 耐久： 500/500 體質： 7 食品提升： 83 戰鬥經驗： 85|路邊攤|19, 82",
-                       "Name":  "龍之戒",
-                       "Category":  "裝備",
-                       "Attrs":  "等級： 100 耐久： 500/500 體質： 7 食品提升： 83 戰鬥經驗： 85",
-                       "Price":  80000000,
-                       "UnitPrice":  80000000,
-                       "Qty":  1,
-                       "Stall":  "路邊攤",
-                       "Position":  "19, 82",
-                       "Rule":  "listing_removed",
-                       "RowCount":  1,
-                       "Confidence":  100,
-                       "StallSurvival":  1.019,
-                       "PrevSiteUpdated":  "2026-09-24 20:31",
-                       "CurrSiteUpdated":  "2026-09-24 21:15",
-                       "ConfirmedAt":  "2026-09-24 22:05:13",
-                       "DetectedAt":  "2026-09-24 21:38:49",
-                       "Status":  "confirmed"
-                   },
-                   {
                        "Id":  "fe3de364da23ab22",
                        "VariantKey":  "精煉的有洞神祕指環|裝備|等級： 40 耐久： 1461/1461 力量： 39 敏捷： 41 HP： 755 木抗： 581",
                        "ListingKey":  "精煉的有洞神祕指環|裝備|等級： 40 耐久： 1461/1461 力量： 39 敏捷： 41 HP： 755 木抗： 581|沒有名字的路邊攤|21, 82",
@@ -11000,6 +10978,28 @@
                        "CurrSiteUpdated":  "2026-09-26 16:29",
                        "ConfirmedAt":  "2026-09-26 17:23:54",
                        "DetectedAt":  "2026-09-26 16:42:01",
+                       "Status":  "confirmed"
+                   },
+                   {
+                       "Id":  "23fe64b576c809d5",
+                       "VariantKey":  "宇宙奧秘|道具|-",
+                       "ListingKey":  "宇宙奧秘|道具|-|OB 力敏幸樂|18, 106",
+                       "Name":  "宇宙奧秘",
+                       "Category":  "道具",
+                       "Attrs":  "-",
+                       "Price":  450000000,
+                       "UnitPrice":  450000000,
+                       "Qty":  1,
+                       "Stall":  "OB 力敏幸樂",
+                       "Position":  "18, 106",
+                       "Rule":  "offer_multiset",
+                       "RowCount":  1,
+                       "Confidence":  95,
+                       "StallSurvival":  1,
+                       "PrevSiteUpdated":  "2026-09-26 16:29",
+                       "CurrSiteUpdated":  "2026-09-26 17:16",
+                       "ConfirmedAt":  "2026-09-26 18:15:41",
+                       "DetectedAt":  "2026-09-26 17:23:54",
                        "Status":  "confirmed"
                    }
                ]
