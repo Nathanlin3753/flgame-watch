@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩具</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --panel: #ffffff;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --accent: #1d4ed8;
+            --on-accent: #ffffff;
+            --chip: #f1f5f9;
+            --mark: #fef3c7;
+        }
+        [data-theme="dark"] {
+            --bg: #0f172a;
+            --panel: #1e293b;
+            --ink: #f1f5f9;
+            --muted: #94a3b8;
+            --line: #334155;
+            --accent: #93c5fd;
+            --on-accent: #0f172a;
+            --chip: #0f172a;
+            --mark: #713f12;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.45;
+        }
+        .wrap { max-width: 1180px; margin: 0 auto; padding: 22px 18px 64px; }
+        .sticky {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--bg);
+            padding-bottom: 10px;
+        }
+        .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+        a.back, button.theme, button.ghost {
+            font: inherit;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            color: var(--ink);
+            border-radius: 999px;
+            padding: 7px 13px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 0.04em; }
+        .lead { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
+        .search { display: flex; gap: 8px; margin-top: 16px; }
+        .search input {
+            flex: 1;
+            font: inherit;
+            font-size: 1rem;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        .search input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+        .filter { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
+        .lab { flex: 0 0 auto; width: 4.5em; color: var(--muted); font-size: 0.8rem; }
+        .chips { display: flex; gap: 6px; overflow-x: auto; flex: 1; padding-bottom: 2px; }
+        .chip {
+            font: inherit;
+            cursor: pointer;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.82rem;
+            white-space: nowrap;
+        }
+        .chip[aria-pressed="true"] {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--on-accent);
+        }
+        .summary { margin: 12px 0 8px; color: var(--muted); font-size: 0.88rem; }
+        .cols, .tier {
+            display: grid;
+            grid-template-columns: 52px minmax(132px, 1.25fr) minmax(148px, 1.25fr) minmax(88px, 0.85fr) 76px minmax(210px, 1.7fr) minmax(120px, 1.15fr);
+            gap: 8px 12px;
+            align-items: center;
+        }
+        .cols {
+            padding: 0 14px 8px;
+            color: var(--muted);
+            font-size: 0.75rem;
+        }
+        .list { display: flex; flex-direction: column; gap: 10px; }
+        .line {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .tier { padding: 10px 14px; }
+        .tier + .tier { border-top: 1px solid var(--line); }
+        .tier.hit { background: var(--mark); }
+        .lv, .cap { font-variant-numeric: tabular-nums; font-weight: 700; }
+        .who { display: flex; align-items: center; gap: 8px; min-width: 0; }
+        .who span, .doll, .maps { min-width: 0; }
+        .name { font-weight: 700; }
+        img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            background: #111827;
+            border-radius: 6px;
+            image-rendering: pixelated;
+            flex: 0 0 auto;
+        }
+        .mats { display: flex; flex-wrap: wrap; gap: 4px; }
+        .mat {
+            background: var(--chip);
+            border-radius: 999px;
+            padding: 2px 8px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+        .qty { color: var(--muted); font-variant-numeric: tabular-nums; }
+        .tag {
+            font-size: 0.72rem;
+            font-weight: 700;
+            background: var(--accent);
+            color: var(--on-accent);
+            border-radius: 999px;
+            padding: 1px 6px;
+            flex: 0 0 auto;
+        }
+        .k { display: none; }
+        .lv-inline { display: none; font-variant-numeric: tabular-nums; font-weight: 700; margin-right: 6px; }
+        .empty {
+            background: var(--panel);
+            border: 1px dashed var(--line);
+            border-radius: 14px;
+            padding: 22px 16px;
+            color: var(--muted);
+        }
+        .empty button, .more {
+            font: inherit;
+            border: 0;
+            background: none;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .empty button { margin-top: 8px; }
+        .more { font-size: 0.88rem; }
+        footer {
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+        footer a { color: var(--accent); }
+        @media (max-width: 860px) {
+            .cols { display: none; }
+            .k { display: inline; color: var(--muted); font-size: 0.75rem; font-weight: 500; margin-right: 4px; }
+            .lv-inline { display: inline; }
+            .lv { display: none; }
+            .tier {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "toy toy"
+                    "base base"
+                    "doll cap"
+                    "mats mats"
+                    "maps maps";
+            }
+            .toy { grid-area: toy; }
+            .base { grid-area: base; }
+            .doll { grid-area: doll; }
+            .cap { grid-area: cap; }
+            .mats { grid-area: mats; }
+            .maps { grid-area: maps; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sticky">
+            <div class="top">
+                <a class="back" href="index.html">回商場</a>
+                <button class="theme" type="button" onclick="toggleTheme()">主題</button>
+            </div>
+            <h1>玩具</h1>
+            <p class="lead">同一條升級放在一起，由低到高。打玩具名、基底、娃娃、材料或地圖。</p>
+            <div class="search">
+                <input id="q" type="search" placeholder="例如 木馬、鱷魚皮、空中宮殿" autocomplete="off" enterkeyhint="search">
+                <button class="ghost" id="clear" type="button" hidden>清除</button>
+            </div>
+            <div class="filter">
+                <span class="lab">玩具等級</span>
+                <div class="chips" id="lvChips"></div>
+            </div>
+            <div class="filter">
+                <span class="lab">能力上限</span>
+                <div class="chips" id="capChips"></div>
+            </div>
+        </div>
+        <p class="summary" id="summary"></p>
+        <div class="cols" id="cols">
+            <span>等級</span>
+            <span>玩具</span>
+            <span>基底</span>
+            <span>娃娃</span>
+            <span>能力上限</span>
+            <span>材料</span>
+            <span>地圖</span>
+        </div>
+        <div class="list" id="view"></div>
+        <footer>
+            本頁整理自〈<a href="http://dsps.case.eorz.net/" target="_blank" rel="noopener">敗家一族</a>〉、〈<a href="https://chi-hsin.github.io/petFairy/" target="_blank" rel="noopener">幻獸樂園</a>〉。要看完整版，請到原文。
+        </footer>
+    </div>
+    <script src="toys-data.js"></script>
+    <script>
+        var toys = Array.isArray(window.TOYS) ? window.TOYS : [];
+        var buckets = {};
+        toys.forEach(function (t) {
+            var key = Math.floor((Number(t.id) - 1) / 3);
+            if (!buckets[key]) buckets[key] = [];
+            buckets[key].push(t);
+        });
+        var groups = Object.keys(buckets).map(Number).sort(function (a, b) { return a - b; }).map(function (key) {
+            return buckets[key].sort(function (a, b) { return a.level - b.level; });
+        });
+
+        function uniq(list) {
+            var seen = {};
+            var out = [];
+            list.forEach(function (n) {
+                if (!seen[n]) { seen[n] = true; out.push(n); }
+            });
+            out.sort(function (a, b) { return a - b; });
+            return out;
+        }
+        var levels = uniq(toys.map(function (t) { return t.level; }));
+        var caps = uniq(toys.map(function (t) { return t.cap; }));
+        var state = { q: "", lv: 0, cap: 0 };
+
+        function el(tag, className, text) {
+            var node = document.createElement(tag);
+            if (className) node.className = className;
+            if (text != null) node.textContent = text;
+            return node;
+        }
+        function fold(s) {
+            return String(s || "").toLowerCase().replace(/[\s\u3000]+/g, "").replace(/[ｋＫ]/g, "k");
+        }
+        function hay(t) {
+            var p = t.parts || {};
+            var maps = Array.isArray(t.maps) ? t.maps : [];
+            return fold([t.name, t.base, t.doll, p.wood, p.hide, p.card, maps.join("")].join(""));
+        }
+        function fileId(id) {
+            var n = Number(id);
+            if (!Number.isInteger(n) || n < 1 || n > 200) return "";
+            return String(n);
+        }
+        function icon(id, kind, alt) {
+            var img = document.createElement("img");
+            var n = fileId(id);
+            if (n) img.src = "toys/" + (kind === "base" ? "b" : "") + n + ".gif";
+            img.alt = alt || "";
+            img.width = 36;
+            img.height = 36;
+            img.loading = "lazy";
+            img.decoding = "async";
+            return img;
+        }
+        function labeled(className, key, value) {
+            var node = el("div", className);
+            node.appendChild(el("span", "k", key));
+            if (typeof value === "string") node.appendChild(document.createTextNode(value));
+            else node.appendChild(value);
+            return node;
+        }
+        function mat(name, qty) {
+            var node = el("span", "mat");
+            node.appendChild(document.createTextNode(name || ""));
+            if (qty != null && qty !== "") {
+                node.appendChild(document.createTextNode(" "));
+                node.appendChild(el("span", "qty", String(qty)));
+            }
+            return node;
+        }
+        function fillChips(host, values, current, onPick) {
+            host.textContent = "";
+            function add(label, value, pressed) {
+                var button = el("button", "chip", label);
+                button.type = "button";
+                button.setAttribute("aria-pressed", pressed ? "true" : "false");
+                button.onclick = function () { onPick(value); };
+                host.appendChild(button);
+            }
+            add("全部", 0, !current);
+            values.forEach(function (n) {
+                add(String(n), current === n ? 0 : n, current === n);
+            });
+        }
+        function renderTier(t, hit, showTag) {
+            var row = el("div", hit ? "tier hit" : "tier");
+            row.appendChild(el("div", "lv", String(t.level)));
+
+            var toy = el("div", "who toy");
+            toy.appendChild(icon(t.id, "toy", ""));
+            var name = el("span", "name");
+            name.appendChild(el("span", "lv-inline", String(t.level)));
+            name.appendChild(document.createTextNode(t.name || ""));
+            toy.appendChild(name);
+            if (showTag) toy.appendChild(el("span", "tag", "符合"));
+            row.appendChild(toy);
+
+            var base = el("div", "who base");
+            base.appendChild(el("span", "k", "基底"));
+            base.appendChild(icon(t.id, "base", ""));
+            base.appendChild(document.createTextNode(t.base || ""));
+            row.appendChild(base);
+
+            row.appendChild(labeled("doll", "娃娃", t.doll || ""));
+            row.appendChild(labeled("cap", "能力上限", String(t.cap)));
+
+            var mats = el("div", "mats");
+            mats.appendChild(el("span", "k", "材料"));
+            var p = t.parts;
+            if (p) {
+                mats.appendChild(mat(p.wood, p.woodN));
+                mats.appendChild(mat(p.hide, p.hideN));
+                mats.appendChild(mat(p.card, null));
+            } else if (t.item) {
+                mats.appendChild(mat(t.item, null));
+            }
+            row.appendChild(mats);
+
+            var maps = Array.isArray(t.maps) ? t.maps.filter(Boolean).join("、") : "";
+            row.appendChild(labeled("maps", "地圖", maps));
+            return row;
+        }
+        function clearChips() {
+            state.lv = 0;
+            state.cap = 0;
+            render();
+        }
+        function render() {
+            fillChips(document.getElementById("lvChips"), levels, state.lv, function (n) {
+                state.lv = n;
+                render();
+            });
+            fillChips(document.getElementById("capChips"), caps, state.cap, function (n) {
+                state.cap = n;
+                render();
+            });
+            document.getElementById("clear").hidden = !(state.q || state.lv || state.cap);
+            var summary = document.getElementById("summary");
+            var view = document.getElementById("view");
+            var cols = document.getElementById("cols");
+            view.textContent = "";
+            var q = fold(state.q);
+            var shown = [];
+            var missed = 0;
+            groups.forEach(function (group) {
+                var textHits = group.filter(function (t) { return !q || hay(t).indexOf(q) !== -1; });
+                if (q && textHits.length === 0) return;
+                var visible = group.filter(function (t) {
+                    if (state.lv && t.level !== state.lv) return false;
+                    if (state.cap && t.cap !== state.cap) return false;
+                    return true;
+                });
+                if (!visible.length) {
+                    if (q) missed += textHits.length;
+                    return;
+                }
+                if (q && !visible.some(function (t) { return hay(t).indexOf(q) !== -1; })) {
+                    missed += textHits.length;
+                    return;
+                }
+                shown.push(visible);
+            });
+
+            if (!shown.length) {
+                cols.hidden = true;
+                if (missed) {
+                    var where = [];
+                    if (state.lv) where.push(state.lv + " 級");
+                    if (state.cap) where.push("能力上限 " + state.cap);
+                    summary.textContent = where.join("、") + "裡沒有。其他有 " + missed + " 個。";
+                    var empty = el("div", "empty");
+                    empty.appendChild(document.createTextNode("這個條件裡找不到。"));
+                    empty.appendChild(document.createElement("br"));
+                    var again = el("button", "", "改看全部等級");
+                    again.type = "button";
+                    again.onclick = clearChips;
+                    empty.appendChild(again);
+                    view.appendChild(empty);
+                } else if (state.lv || state.cap) {
+                    var label = state.lv && state.cap
+                        ? (state.lv + " 級裡沒有能力上限 " + state.cap + " 的玩具。")
+                        : (state.lv ? (state.lv + " 級沒有玩具。") : ("能力上限 " + state.cap + " 沒有玩具。"));
+                    summary.textContent = label;
+                    var none = el("div", "empty");
+                    none.appendChild(document.createTextNode("這兩個條件沒有重疊。"));
+                    none.appendChild(document.createElement("br"));
+                    var reset = el("button", "", "改看全部");
+                    reset.type = "button";
+                    reset.onclick = clearChips;
+                    none.appendChild(reset);
+                    view.appendChild(none);
+                } else {
+                    summary.textContent = "沒有符合的玩具。";
+                    view.appendChild(el("div", "empty", "換一個名字、材料或地圖再試。"));
+                }
+                return;
+            }
+
+            cols.hidden = false;
+            var count = shown.reduce(function (sum, group) { return sum + group.length; }, 0);
+            var line = "找到 " + shown.length + " 條，" + count + " 個玩具。";
+            if (!q && !state.lv && !state.cap) line = groups.length + " 條升級，" + toys.length + " 個玩具。";
+            if (missed) line += "另外 " + missed + " 個在其他等級或能力。";
+            summary.textContent = line;
+
+            shown.forEach(function (group) {
+                var block = el("div", "line");
+                var hits = group.filter(function (t) { return q && hay(t).indexOf(q) !== -1; });
+                var showTag = hits.length > 0 && hits.length < group.length;
+                group.forEach(function (t) {
+                    var hit = q && hay(t).indexOf(q) !== -1;
+                    block.appendChild(renderTier(t, hit, showTag && hit));
+                });
+                view.appendChild(block);
+            });
+            if (missed) {
+                var more = el("button", "more", "改看全部等級");
+                more.type = "button";
+                more.onclick = clearChips;
+                view.appendChild(more);
+            }
+        }
+
+        document.getElementById("q").addEventListener("input", function (e) {
+            state.q = e.target.value;
+            render();
+        });
+        document.getElementById("clear").addEventListener("click", function () {
+            state.q = "";
+            state.lv = 0;
+            state.cap = 0;
+            document.getElementById("q").value = "";
+            document.getElementById("q").focus();
+            render();
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                state.q = "";
+                state.lv = 0;
+                state.cap = 0;
+                document.getElementById("q").value = "";
+                render();
+            }
+        });
+        (function () {
+            var saved = localStorage.getItem("theme");
+            var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (saved === "dark" || (!saved && dark)) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+        function toggleTheme() {
+            var cur = document.documentElement.getAttribute("data-theme");
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        }
+        render();
+    </script>
+</body>
+</html>
