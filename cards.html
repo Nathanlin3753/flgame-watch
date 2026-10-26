@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家卡</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --panel: #ffffff;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --accent: #1d4ed8;
+            --accent-soft: #dbeafe;
+            --chip: #f1f5f9;
+            --mark: #fef3c7;
+        }
+        [data-theme="dark"] {
+            --bg: #0f172a;
+            --panel: #1e293b;
+            --ink: #f1f5f9;
+            --muted: #94a3b8;
+            --line: #334155;
+            --accent: #93c5fd;
+            --accent-soft: #1e3a8a;
+            --chip: #0f172a;
+            --mark: #713f12;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.5;
+        }
+        .wrap { max-width: 860px; margin: 0 auto; padding: 22px 18px 64px; }
+        .sticky {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--bg);
+            backdrop-filter: blur(10px);
+            padding-bottom: 12px;
+        }
+        .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+        a.back, button.theme, button.ghost {
+            font: inherit;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            color: var(--ink);
+            border-radius: 999px;
+            padding: 7px 13px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 0.04em; }
+        .lead { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
+        .search {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .search input {
+            flex: 1;
+            font: inherit;
+            font-size: 1rem;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        .search input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .chip, .book {
+            font: inherit;
+            cursor: pointer;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+        }
+        .chip {
+            border-radius: 999px;
+            padding: 7px 12px;
+            font-size: 0.84rem;
+        }
+        .chip[aria-pressed="true"], .book[aria-pressed="true"] {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+        .books {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .book {
+            text-align: left;
+            border-radius: 16px;
+            padding: 16px;
+        }
+        .book b { display: block; font-size: 1.02rem; }
+        .book span { color: var(--muted); font-size: 0.82rem; }
+        .book[aria-pressed="true"] span { color: inherit; }
+        .summary { margin: 14px 0 8px; color: var(--muted); font-size: 0.88rem; }
+        .list { display: flex; flex-direction: column; gap: 8px; }
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 12px 14px;
+        }
+        .card-head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+        .num {
+            font-variant-numeric: tabular-nums;
+            color: var(--muted);
+            min-width: 2.4em;
+        }
+        .name { font-weight: 700; }
+        .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+        .pill {
+            font: inherit;
+            font-size: 0.75rem;
+            border: 0;
+            border-radius: 999px;
+            padding: 3px 8px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            cursor: pointer;
+        }
+        .places { margin: 6px 0 0; padding: 0; list-style: none; color: var(--muted); font-size: 0.9rem; }
+        .places li { margin: 0; }
+        .empty {
+            background: var(--panel);
+            border: 1px dashed var(--line);
+            border-radius: 14px;
+            padding: 22px 16px;
+            color: var(--muted);
+        }
+        .empty button {
+            font: inherit;
+            margin-top: 8px;
+            border: 0;
+            background: none;
+            color: var(--accent);
+            cursor: pointer;
+            padding: 0;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        footer {
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+        footer a { color: var(--accent); }
+        @media (max-width: 640px) {
+            .pills { margin-left: 0; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sticky">
+            <div class="top">
+                <a class="back" href="index.html">回商場</a>
+                <button class="theme" type="button" onclick="toggleTheme()">主題</button>
+            </div>
+            <h1>家卡</h1>
+            <p class="lead">一級沒有集卡冊。點一本看裡面有哪些卡，或打卡名、編號、地圖。</p>
+            <div class="search">
+                <input id="q" type="search" placeholder="例如 毒骷髏、048、鼠洞" autocomplete="off" enterkeyhint="search">
+                <button class="ghost" id="clear" type="button" hidden>清除</button>
+            </div>
+            <div class="chips" id="chips"></div>
+        </div>
+        <p class="summary" id="summary"></p>
+        <div id="view"></div>
+        <footer>
+            本頁整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E5%AE%B6%E5%8D%A1%E8%B3%87%E8%A8%8A&amp;ss=24438" target="_blank" rel="noopener">家卡資訊</a>〉。要看完整版，請到原文。
+        </footer>
+    </div>
+    <script>
+        var albums = [
+            { lv: 2, name: "家族之光" },
+            { lv: 3, name: "黑洞" },
+            { lv: 4, name: "啥米碗糕" },
+            { lv: 5, name: "悠悠一族" },
+            { lv: 6, name: "奇妙動物" },
+            { lv: 7, name: "猛鬼夜行" },
+            { lv: 8, name: "蟲蟲百科" },
+            { lv: 9, name: "九級" }
+        ];
+        var cards = [
+            { id: "003", name: "水蜘蛛卡", lv: [8], places: ["市鎮地下室", "吉恩村 (村外)", "綠夫村 (村外)", "伊利村 (村外)"] },
+            { id: "004", name: "紅瓢蟲卡", lv: [8], places: ["市鎮地下室", "吉恩村 (村外)", "綠夫村 (村外)", "伊利村 (村外)"] },
+            { id: "006", name: "窩捲蟲卡", lv: [8], places: ["市鎮地下室", "吉恩村 (村外)", "綠夫村 (村外)", "伊利村 (村外)"] },
+            { id: "010", name: "大紅蝶卡", lv: [8], places: ["微笑森林 (下半部)", "巴斯拉空域", "巴格達空域"] },
+            { id: "011", name: "光幽卡", lv: [7], places: ["害怕峽谷 (下段)"] },
+            { id: "013", name: "闇瓢蟲卡", lv: [8], places: ["害怕峽谷 (下段)"] },
+            { id: "014", name: "黃褐蝶卡", lv: [8], places: ["北綠野", "巴斯拉空域", "巴格達空域"] },
+            { id: "015", name: "金殼蛛卡", lv: [8], places: ["北綠野", "飛魚角"] },
+            { id: "024", name: "火捲蟲卡", lv: [8], places: ["微笑森林 (最上段)"] },
+            { id: "025", name: "天使蝶卡", lv: [8], places: ["害怕峽谷 (上段)", "巴格達空域"] },
+            { id: "033", name: "枯葉蝶卡", lv: [8], places: ["豌豆湖 (左半邊)", "玫瑰湖 (左半邊)"] },
+            { id: "035", name: "水瓢蟲卡", lv: [8], places: ["豌豆湖 (左半邊)", "玫瑰湖 (左半邊)", "史萊姆洞窟 B2 (左半邊)"] },
+            { id: "039", name: "土窩蟲卡", lv: [8], places: ["金銀城外 (中偏上)", "鼠洞 B1 (下半部)"] },
+            { id: "041", name: "火螃蟹卡", lv: [5], places: ["南路野", "彩虹城外"] },
+            { id: "042", name: "來特蜘蛛卡", lv: [8], places: ["青鳥城外 (中偏下)"] },
+            { id: "048", name: "紅木偶卡", lv: [2], places: ["北方洞窟"] },
+            { id: "050", name: "土撥鼠卡", lv: [2], places: ["鼠洞 B2", "金銀城外 (中偏下)"] },
+            { id: "051", name: "樹蛙卡", lv: [2], places: ["玫瑰湖 (右下角)", "青蛙沼澤 (左半邊)"] },
+            { id: "052", name: "水窩蟲卡", lv: [2, 8], places: ["玫瑰湖 (右下角)", "青蛙沼澤 (左半邊)"] },
+            { id: "053", name: "光瓢蟲卡", lv: [2, 8], places: ["西綠野 (右半邊)", "青鳥城外 (中偏上)"] },
+            { id: "054", name: "金屬史萊姆卡", lv: [2], places: ["鼠洞 B2 (上半部)", "史萊姆洞窟 B2 (左半邊)", "矮人山 (右半邊)"] },
+            { id: "055", name: "邪惡禿鷹卡", lv: [2], places: ["西綠野 (右半邊)"] },
+            { id: "059", name: "木蟹卡", lv: [5], places: ["玫瑰湖 (右上角)", "青蛙沼澤 (右半邊)"] },
+            { id: "063", name: "燦金蝶卡", lv: [8], places: ["矮人山 (左半邊)"] },
+            { id: "064", name: "金屬幽靈卡", lv: [7], places: ["金銀城外 (最下段)"] },
+            { id: "067", name: "挖土蜘蛛卡", lv: [8], places: ["秘密平原"] },
+            { id: "068", name: "木瓢蟲卡", lv: [8], places: ["鼠洞 B3", "白雪森林 (最左邊)"] },
+            { id: "076", name: "惡虎卡", lv: [3], places: ["祕密平原 (上半部)"] },
+            { id: "077", name: "木頭鷹卡", lv: [3], places: ["史萊姆洞窟 B3 (右半邊)", "白雪森林 (中段)"] },
+            { id: "078", name: "史萊姆卡", lv: [3], places: ["史萊姆洞窟 B3 (右半邊)", "史蓋窩克海"] },
+            { id: "079", name: "火燄飛馬卡", lv: [3], places: ["彩虹城地下迷宮 B1", "白雪森林 (中段)"] },
+            { id: "080", name: "光猷箭豬卡", lv: [3], places: ["神燈沙漠 (右半邊)"] },
+            { id: "081", name: "金獅卡", lv: [3], places: ["祕密平原 (上半部)"] },
+            { id: "082", name: "黑寡婦卡", lv: [3, 8], places: ["神燈沙漠 (右半邊)", "東迷路森林 (左半邊)"] },
+            { id: "084", name: "幽靈卡", lv: [7], places: ["白雪森林 (右上角)", "沉睡湖"] },
+            { id: "085", name: "水骷髏卡", lv: [7], places: ["金銀湖", "沉睡湖"] },
+            { id: "088", name: "火蜘蛛卡", lv: [8], places: ["白雪森林 (右下角)"] },
+            { id: "096", name: "血骷髏卡", lv: [7], places: ["沉睡村", "冥界洞窟 B2 (左邊通道)"] },
+            { id: "101", name: "怨靈卡", lv: [7], places: ["坦拉娜迷宮"] },
+            { id: "102", name: "黑蝶卡", lv: [8], places: ["天鵝湖 (正中間至下方入口處)"] },
+            { id: "103", name: "土骷髏卡", lv: [7], places: ["沉睡村", "冥界洞窟 B2 (左邊通道)"] },
+            { id: "105", name: "火幽靈卡", lv: [7], places: ["沉睡村", "冥界洞窟 B3 (左邊通道)"] },
+            { id: "111", name: "土狼卡", lv: [4], places: ["鳳梨山 (中段)", "大野狼洞窟"] },
+            { id: "112", name: "火艾波卡", lv: [4], places: ["鳳梨山 (中段)", "鳳梨山 (上段、下段)"] },
+            { id: "114", name: "金猴子卡", lv: [4], places: ["糖果山 (中段)", "羅比特草原 (中、下段)"] },
+            { id: "115", name: "毒骷髏卡", lv: [4, 7], places: ["月光村 (右半邊)", "藍喵喵的迷宮"] },
+            { id: "116", name: "半龍人卡", lv: [4], places: ["糖果山 (上段、下段)"] },
+            { id: "133", name: "戀水蝶卡", lv: [8], places: ["不知名迷宮"] },
+            { id: "144", name: "金屬瓢蟲卡", lv: [8], places: ["哈啾島"] },
+            { id: "145", name: "窩木蟲卡", lv: [8], places: ["哈啾島"] },
+            { id: "148", name: "地縛靈卡", lv: [7], places: ["哈啾島", "冥界洞窟 B2 (左邊通道)"] },
+            { id: "149", name: "白骨頭卡", lv: [7], places: ["哈啾島"] },
+            { id: "151", name: "黃金虎卡", lv: [4], places: ["椰子島"] },
+            { id: "152", name: "木蜘蛛卡", lv: [4, 8], places: ["椰子島"] },
+            { id: "153", name: "水蟹卡", lv: [4], places: ["椰子島"] },
+            { id: "154", name: "阿波羅獅卡", lv: [4], places: ["椰子島"] },
+            { id: "155", name: "土瓢蟲卡", lv: [4, 8], places: ["椰子島"] },
+            { id: "156", name: "光波波卡", lv: [4], places: ["椰子島"] },
+            { id: "157", name: "正港黑豬卡", lv: [4], places: ["椰子島"] },
+            { id: "164", name: "黑捲蟲卡", lv: [8], places: ["鬱金香島"] },
+            { id: "192", name: "水鬼卡", lv: [4, 7], places: ["巴斯密洞 B1", "冥界洞窟 B2 (左邊通道)", "冥界洞窟 B3 (左邊通道)"] },
+            { id: "193", name: "金光骷髏卡", lv: [7], places: ["巴斯密洞 B1"] },
+            { id: "194", name: "青苔石卡", lv: [4], places: ["巴斯密洞 B1"] },
+            { id: "205", name: "火蚌殼卡", lv: [5], places: ["巴斯密洞 B3"] },
+            { id: "210", name: "小金貓頭鷹卡", lv: [6], places: ["趴趴迷宮 B1"] },
+            { id: "211", name: "木居蟹卡", lv: [5], places: ["趴趴迷宮 B1"] },
+            { id: "216", name: "泡泡章魚卡", lv: [5], places: ["趴趴迷宮 B2"] },
+            { id: "218", name: "木乃伊卡", lv: [7], places: ["趴趴迷宮 B2"] },
+            { id: "219", name: "路比卡", lv: [5], places: ["趴趴迷宮 B2"] },
+            { id: "221", name: "光窩蟲卡", lv: [8], places: ["趴趴迷宮 B2"] },
+            { id: "223", name: "海馬卡", lv: [5], places: ["趴趴迷宮 B3"] },
+            { id: "226", name: "木獅卡", lv: [6], places: ["趴趴迷宮 B3"] },
+            { id: "229", name: "黑神駒卡", lv: [6], places: ["趴趴迷宮 B3"] },
+            { id: "230", name: "布魯鯨卡", lv: [5], places: ["史蓋窩克海 B1"] },
+            { id: "238", name: "鎂光燈卡", lv: [5], places: ["史蓋窩克海 B2"] },
+            { id: "253", name: "挖土蟲卡", lv: [8], places: ["夢想花園"] },
+            { id: "259", name: "愛水虎卡", lv: [6], places: ["西迷路森林"] },
+            { id: "261", name: "墨汁毛蟲卡", lv: [8], places: ["東迷路森林 (右半邊)"] },
+            { id: "262", name: "綿綿狗卡", lv: [6], places: ["東迷路森林 (右半邊)"] },
+            { id: "264", name: "微笑貓咪卡", lv: [6], places: ["羅比特草原 (中、下段)"] },
+            { id: "268", name: "啃木蟲卡", lv: [8], places: ["莫名其妙花叢"] },
+            { id: "401", name: "金屬魔卡", lv: [7], places: ["巨岩島", "試煉洞窟 B3"] },
+            { id: "404", name: "金駱馬卡", lv: [6], places: ["卡拉斯山區", "秘密古墓 B1"] },
+            { id: "409", name: "神燈精靈卡", lv: [9], places: ["冥界洞窟 B3 (右邊通道)", "冥界洞窟 B3 (左邊通道)", "試煉洞窟 B3"] },
+            { id: "412", name: "陰森魔女卡", lv: [7], places: ["哈辛島"] },
+            { id: "416", name: "木Q獸卡", lv: [6], places: ["摩摩島", "冥界洞窟 B1", "試煉洞窟 B2"] },
+            { id: "417", name: "木鳩獸卡", lv: [6], places: ["卡拉斯空域", "大盜巢穴 B1"] },
+            { id: "418", name: "巨木精靈卡", lv: [9], places: ["試煉洞窟 B1"] },
+            { id: "435", name: "赤焰巨人卡", lv: [9], places: ["冥界洞窟 B2 (右邊通道)", "冥界洞窟 B2 (左邊通道)", "試煉洞窟 B2"] },
+            { id: "439", name: "妮莎駱駝卡", lv: [6], places: ["大盜巢穴 B3"] },
+            { id: "440", name: "土象卡", lv: [6], places: ["冥界洞窟 B3 (右邊通道)", "冥界洞窟 B3 (左邊通道)"] },
+            { id: "444", name: "沙土巨魔卡", lv: [9], places: ["秘密古墓 B2", "秘密古墓 B3"] },
+            { id: "452", name: "閃光精靈卡", lv: [9], places: ["秘密古墓 B3"] },
+            { id: "466", name: "哈尼蜂卡", lv: [8], places: ["瓦尼島", "遺跡地下 1F"] },
+            { id: "473", name: "綠怕啃卡", lv: [7], places: ["遺跡地下 7F", "遺跡地下 8F", "試煉洞窟 B3"] },
+            { id: "474", name: "綠摳拉卡", lv: [6], places: ["瓦尼島", "遺跡地下 1F", "遺跡地下 2F"] },
+            { id: "484", name: "汲水蜂卡", lv: [8], places: ["試煉洞窟 B3", "遺跡地下 10F"] },
+            { id: "489", name: "法亞女妖卡", lv: [7], places: ["遺跡地下 7F", "遺跡地下 8F"] },
+            { id: "493", name: "殺手蜂卡", lv: [8], places: ["遺跡地下 11F"] },
+            { id: "499", name: "鑽洞企鵝卡", lv: [6], places: ["遺跡地下 8F", "遺跡地下 9F"] },
+            { id: "502", name: "土蜂卡", lv: [8], places: ["遺跡地下 13F", "遺跡地下 14F"] },
+            { id: "504", name: "挖土大可獸卡", lv: [6], places: ["遺跡地下 3F", "遺跡地下 4F"] },
+            { id: "523", name: "黑森林卡", lv: [7], places: ["遺跡地下 12F"] },
+            { id: "563", name: "金河豚卡", lv: [5], places: ["坦林平原"] },
+            { id: "571", name: "綠尾鳥卡", lv: [6], places: ["彩花田"] },
+            { id: "585", name: "冷艷豹卡", lv: [6], places: ["坦林平原"] },
+            { id: "589", name: "泡水草包卡", lv: [7], places: ["彩花田"] },
+            { id: "590", name: "紅毛猿卡", lv: [6], places: ["彩花村"] },
+            { id: "602", name: "挖洞鼬卡", lv: [6], places: ["彩花村"] },
+            { id: "606", name: "地獄修士卡", lv: [7], places: ["陽光森林"] },
+            { id: "772", name: "貪心哥不林卡", lv: [9], places: ["古堡地下 B3"] },
+            { id: "773", name: "黃金寶箱卡", lv: [9], places: ["古堡地下 B1"] },
+            { id: "774", name: "閃電劍妖卡", lv: [9], places: ["古堡地下 B2"] },
+            { id: "775", name: "發呆哥不林卡", lv: [9], places: ["風之谷"] },
+            { id: "776", name: "神秘寶箱卡", lv: [9], places: ["沙漠地城 B1"] },
+            { id: "777", name: "叢林劍妖卡", lv: [9], places: ["羊角村"] },
+            { id: "779", name: "海底寶箱卡", lv: [9], places: ["沙漠地城 B2"] },
+            { id: "780", name: "藍天劍妖卡", lv: [9], places: ["沙漠地城 B1"] },
+            { id: "781", name: "害羞哥不林卡", lv: [9], places: ["古堡地下 B1"] },
+            { id: "782", name: "咬人箱卡", lv: [9], places: ["沙漠地城 B2"] },
+            { id: "783", name: "火焰劍妖卡", lv: [9], places: ["狂風沙漠"] },
+            { id: "784", name: "大地哥不林卡", lv: [9], places: ["古堡地下 B2"] },
+            { id: "785", name: "地底寶箱卡", lv: [9], places: ["古堡地下 B3"] },
+            { id: "786", name: "石像劍妖卡", lv: [9], places: ["風之谷"] },
+            { id: "787", name: "勇敢哥不林卡", lv: [9], places: ["沙漠地城 B1"] },
+            { id: "789", name: "白銀劍妖卡", lv: [9], places: ["沙漠地城 B1"] },
+            { id: "790", name: "狡詐哥不林卡", lv: [9], places: ["沙漠地城 B2"] },
+            { id: "791", name: "猜謎箱卡", lv: [9], places: ["古堡地下 B2"] },
+            { id: "792", name: "惡魔劍妖卡", lv: [9], places: ["古堡地下 B1"] }
+        ];
+
+        var state = { q: "", lv: 0 };
+
+        function albumName(lv) {
+            for (var i = 0; i < albums.length; i++) {
+                if (albums[i].lv === lv) return albums[i].name;
+            }
+            return "";
+        }
+        function countIn(lv) {
+            var n = 0;
+            cards.forEach(function (c) { if (c.lv.indexOf(lv) !== -1) n++; });
+            return n;
+        }
+        function fold(s) {
+            return String(s || "").toLowerCase().replace(/\s+/g, "").replace(/祕/g, "密").replace(/秘/g, "密");
+        }
+        function hay(card) {
+            var bits = [card.id, String(parseInt(card.id, 10)), card.name].concat(card.places);
+            card.lv.forEach(function (lv) { bits.push(albumName(lv)); });
+            return fold(bits.join(" "));
+        }
+        function matches(card, q) {
+            if (!q) return true;
+            if (/^\d+$/.test(q)) {
+                var padded = ("000" + q).slice(-3);
+                return card.id === padded || card.id === q;
+            }
+            return hay(card).indexOf(fold(q)) !== -1;
+        }
+
+        function el(tag, cls, text) {
+            var node = document.createElement(tag);
+            if (cls) node.className = cls;
+            if (text != null) node.textContent = text;
+            return node;
+        }
+
+        function renderChips() {
+            var box = document.getElementById("chips");
+            box.textContent = "";
+            albums.forEach(function (a) {
+                var b = el("button", "chip", a.lv + " " + a.name);
+                b.type = "button";
+                b.setAttribute("aria-pressed", state.lv === a.lv ? "true" : "false");
+                b.onclick = function () {
+                    state.lv = state.lv === a.lv ? 0 : a.lv;
+                    render();
+                };
+                box.appendChild(b);
+            });
+        }
+
+        function renderBooks() {
+            var view = document.getElementById("view");
+            var grid = el("div", "books");
+            albums.forEach(function (a) {
+                var b = el("button", "book");
+                b.type = "button";
+                b.appendChild(el("b", "", a.lv + " " + a.name));
+                b.appendChild(el("span", "", countIn(a.lv) + " 張"));
+                b.onclick = function () { state.lv = a.lv; render(); };
+                grid.appendChild(b);
+            });
+            view.appendChild(grid);
+        }
+
+        function renderList(list) {
+            var view = document.getElementById("view");
+            var box = el("div", "list");
+            list.forEach(function (card) {
+                var row = el("article", "card");
+                var head = el("div", "card-head");
+                head.appendChild(el("span", "num", card.id));
+                head.appendChild(el("span", "name", card.name));
+                var pills = el("div", "pills");
+                var pillLevels = state.lv ? card.lv.filter(function (lv) { return lv !== state.lv; }) : card.lv;
+                pillLevels.forEach(function (lv) {
+                    var p = el("button", "pill", lv + " " + albumName(lv));
+                    p.type = "button";
+                    p.onclick = function () {
+                        state.lv = lv;
+                        state.q = "";
+                        document.getElementById("q").value = "";
+                        render();
+                    };
+                    pills.appendChild(p);
+                });
+                if (pillLevels.length) head.appendChild(pills);
+                row.appendChild(head);
+                var places = el("ul", "places");
+                card.places.forEach(function (place) {
+                    places.appendChild(el("li", "", place));
+                });
+                row.appendChild(places);
+                box.appendChild(row);
+            });
+            view.appendChild(box);
+        }
+
+        function render() {
+            renderChips();
+            var q = state.q.trim();
+            document.getElementById("clear").hidden = !q;
+            var summary = document.getElementById("summary");
+            var view = document.getElementById("view");
+            view.textContent = "";
+
+            if (/^[2-9]$/.test(q)) {
+                state.lv = parseInt(q, 10);
+                state.q = "";
+                document.getElementById("q").value = "";
+                q = "";
+                renderChips();
+                document.getElementById("clear").hidden = true;
+            }
+
+            var searched = cards.filter(function (c) { return matches(c, q); });
+            var shown = searched.filter(function (c) { return !state.lv || c.lv.indexOf(state.lv) !== -1; });
+            shown.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
+
+            if (!q && !state.lv) {
+                summary.textContent = "先選一本，或直接搜尋。";
+                renderBooks();
+                return;
+            }
+
+            if (q && state.lv && shown.length === 0 && searched.length > 0) {
+                summary.textContent = albumName(state.lv) + "裡沒有。其他等級有 " + searched.length + " 張。";
+                var empty = el("div", "empty");
+                empty.appendChild(document.createTextNode("這本裡找不到。"));
+                var btn = el("button", "", "改看全部等級");
+                btn.type = "button";
+                btn.onclick = function () { state.lv = 0; render(); };
+                empty.appendChild(document.createElement("br"));
+                empty.appendChild(btn);
+                view.appendChild(empty);
+                return;
+            }
+
+            if (shown.length === 0) {
+                summary.textContent = "沒有符合的卡。";
+                view.appendChild(el("div", "empty", "換一個卡名、編號，或地圖再試。"));
+                return;
+            }
+
+            var title = state.lv ? (state.lv + " " + albumName(state.lv) + " · " + shown.length + " 張") : ("找到 " + shown.length + " 張");
+            summary.textContent = title;
+            renderList(shown);
+        }
+
+        document.getElementById("q").addEventListener("input", function (e) {
+            state.q = e.target.value;
+            render();
+        });
+        document.getElementById("clear").addEventListener("click", function () {
+            state.q = "";
+            document.getElementById("q").value = "";
+            document.getElementById("q").focus();
+            render();
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                state.q = "";
+                state.lv = 0;
+                document.getElementById("q").value = "";
+                render();
+            }
+        });
+
+        (function () {
+            var saved = localStorage.getItem("theme");
+            var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (saved === "dark" || (!saved && dark)) {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+        function toggleTheme() {
+            var cur = document.documentElement.getAttribute("data-theme");
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        }
+        render();
+    </script>
+</body>
+</html>
