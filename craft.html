@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進階工作</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --panel: #ffffff;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --accent: #15803d;
+            --accent-soft: #dcfce7;
+            --mark: #fef3c7;
+        }
+        [data-theme="dark"] {
+            --bg: #0f172a;
+            --panel: #1e293b;
+            --ink: #f1f5f9;
+            --muted: #94a3b8;
+            --line: #334155;
+            --accent: #86efac;
+            --accent-soft: #14532d;
+            --mark: #713f12;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.5;
+        }
+        .wrap { max-width: 980px; margin: 0 auto; padding: 22px 18px 64px; }
+        .sticky {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--bg);
+            padding-bottom: 12px;
+        }
+        .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+        a.back, button.theme, button.ghost {
+            font: inherit;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            color: var(--ink);
+            border-radius: 999px;
+            padding: 7px 13px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 0.04em; }
+        .lead { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
+        .search { display: flex; gap: 8px; margin-top: 16px; }
+        .search input {
+            flex: 1;
+            font: inherit;
+            font-size: 1rem;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        .search input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .chip, .made, .jump {
+            font: inherit;
+            cursor: pointer;
+            border-radius: 999px;
+        }
+        .chip {
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            padding: 7px 12px;
+            font-size: 0.84rem;
+        }
+        .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #f0fdf4; }
+        [data-theme="dark"] .chip[aria-pressed="true"] { color: #052e16; }
+        .summary { margin: 14px 0 8px; color: var(--muted); font-size: 0.88rem; }
+        .step {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 14px 14px 10px;
+            margin-top: 10px;
+        }
+        .step h2 { margin: 0 0 10px; font-size: 1.05rem; }
+        .step h2 .lv { color: var(--muted); font-weight: 600; margin-right: 8px; }
+        .mat { padding: 8px 0; border-top: 1px solid var(--line); }
+        .mat-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+        .mat-name { font-weight: 700; }
+        .qty { color: var(--muted); font-weight: 600; }
+        .hit { background: var(--mark); border-radius: 6px; padding: 0 4px; }
+        .made, .jump {
+            border: 0;
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 3px 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .maps { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+        .map {
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 3px 8px;
+            font-size: 0.78rem;
+        }
+        .map b { font-weight: 700; margin-right: 6px; }
+        .map span { color: var(--muted); }
+        .none { color: var(--muted); font-size: 0.84rem; }
+        .empty {
+            background: var(--panel);
+            border: 1px dashed var(--line);
+            border-radius: 14px;
+            padding: 22px 16px;
+            color: var(--muted);
+        }
+        .jumps { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        footer {
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+        footer a { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sticky">
+            <div class="top">
+                <a class="back" href="index.html">回商場</a>
+                <button class="theme" type="button" onclick="toggleTheme()">主題</button>
+            </div>
+            <h1>進階工作</h1>
+            <p class="lead">六個工作。點一個，看 40 等到 200 等要哪些材料，以及材料在哪些圖打得到。自己做出來的會標是哪個工作、幾等。</p>
+            <div class="search">
+                <input id="q" type="search" placeholder="例如 稻米、龍鬚、合金鋼" autocomplete="off" enterkeyhint="search">
+                <button class="ghost" id="clear" type="button" hidden>清除</button>
+            </div>
+            <div class="chips" id="chips"></div>
+        </div>
+        <p class="summary" id="summary"></p>
+        <div id="view"></div>
+        <footer>
+            配方整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E9%80%B2%E9%9A%8E%E5%B7%A5%E4%BD%9C&amp;ss=24438" target="_blank" rel="noopener">進階工作</a>〉，原文整理自敗家一族、Yuki。地圖對自<a href="https://fairyland-info.vercel.app/pet" target="_blank" rel="noopener">幻獸樂園的寵物頁</a>。表上的神祕石原石、蔓陀蘿根、路娜晶石原石，掉落寫法不同，已照寵物頁對上。要看完整版，請到原文。
+        </footer>
+    </div>
+    <script src="craft-data.js"></script>
+    <script>
+        var state = { id: "wine", q: "" };
+
+        function fold(s) {
+            return String(s || "").toLowerCase().replace(/\s+/g, "").replace(/祕/g, "密").replace(/秘/g, "密").replace(/粱/g, "梁");
+        }
+        function el(tag, cls, text) {
+            var node = document.createElement(tag);
+            if (cls) node.className = cls;
+            if (text != null) node.textContent = text;
+            return node;
+        }
+        function skillById(id) {
+            for (var i = 0; i < window.CRAFT.skills.length; i++) {
+                if (window.CRAFT.skills[i].id === id) return window.CRAFT.skills[i];
+            }
+            return window.CRAFT.skills[0];
+        }
+        function skillByName(name) {
+            for (var i = 0; i < window.CRAFT.skills.length; i++) {
+                if (window.CRAFT.skills[i].name === name) return window.CRAFT.skills[i];
+            }
+            return null;
+        }
+        function rowHit(row, q) {
+            if (!q) return true;
+            if (fold(row.name).indexOf(q) !== -1 || fold(String(row.lv)).indexOf(q) !== -1) return true;
+            return row.mats.some(function (mat) { return fold(mat.name).indexOf(q) !== -1; });
+        }
+        function rangeText(map) {
+            return map.lo === map.hi ? String(map.lo) : map.lo + "–" + map.hi;
+        }
+        function mark(text, q) {
+            var node = el("span", q && fold(text).indexOf(q) !== -1 ? "hit" : "", text);
+            return node;
+        }
+
+        function render() {
+            var data = window.CRAFT;
+            var skill = skillById(state.id);
+            var q = fold(state.q.trim());
+            document.getElementById("clear").hidden = !state.q.trim();
+            var chips = document.getElementById("chips");
+            chips.textContent = "";
+            data.skills.forEach(function (item) {
+                var b = el("button", "chip", item.name);
+                b.type = "button";
+                b.setAttribute("aria-pressed", item.id === skill.id ? "true" : "false");
+                b.onclick = function () { state.id = item.id; render(); };
+                chips.appendChild(b);
+            });
+            var view = document.getElementById("view");
+            var summary = document.getElementById("summary");
+            view.textContent = "";
+            var shown = skill.rows.filter(function (row) { return rowHit(row, q); });
+            if (!shown.length) {
+                summary.textContent = skill.name + "裡沒有。";
+                var empty = el("div", "empty", "換一個材料，或改看別的工作。");
+                var others = data.skills.filter(function (item) {
+                    return item.id !== skill.id && item.rows.some(function (row) { return rowHit(row, q); });
+                });
+                if (q && others.length) {
+                    var jumps = el("div", "jumps");
+                    others.forEach(function (item) {
+                        var n = item.rows.filter(function (row) { return rowHit(row, q); }).length;
+                        var b = el("button", "jump", item.name + " " + n + " 項");
+                        b.type = "button";
+                        b.onclick = function () { state.id = item.id; render(); };
+                        jumps.appendChild(b);
+                    });
+                    empty.appendChild(jumps);
+                }
+                view.appendChild(empty);
+                return;
+            }
+            summary.textContent = skill.name + " · " + skill.place + " · " + shown.length + " 項";
+            shown.forEach(function (row) {
+                var block = el("section", "step");
+                var title = el("h2");
+                title.appendChild(el("span", "lv", row.lv + "等"));
+                title.appendChild(mark(row.name, q));
+                block.appendChild(title);
+                row.mats.forEach(function (mat) {
+                    var line = el("div", "mat");
+                    var head = el("div", "mat-head");
+                    head.appendChild(mark(mat.name, q));
+                    head.appendChild(el("span", "qty", "× " + mat.n));
+                    if (mat.made) {
+                        var made = el("button", "made", mat.made.skill + " " + mat.made.lv + "等");
+                        made.type = "button";
+                        made.onclick = function () {
+                            var next = skillByName(mat.made.skill);
+                            if (!next) return;
+                            state.id = next.id;
+                            if (mat.made.lv >= 40) {
+                                state.q = mat.made.name || mat.name;
+                                document.getElementById("q").value = state.q;
+                            } else {
+                                state.q = "";
+                                document.getElementById("q").value = "";
+                            }
+                            render();
+                        };
+                        head.appendChild(made);
+                    }
+                    line.appendChild(head);
+                    if (mat.maps.length) {
+                        var maps = el("div", "maps");
+                        mat.maps.forEach(function (map) {
+                            var chip = el("span", "map");
+                            chip.appendChild(el("b", "", map.name));
+                            chip.appendChild(el("span", "", rangeText(map)));
+                            maps.appendChild(chip);
+                        });
+                        line.appendChild(maps);
+                    } else if (!mat.made) {
+                        line.appendChild(el("div", "none", "寵物頁沒有看到掉落"));
+                    }
+                    block.appendChild(line);
+                });
+                view.appendChild(block);
+            });
+        }
+
+        document.getElementById("q").addEventListener("input", function (e) {
+            state.q = e.target.value;
+            render();
+        });
+        document.getElementById("clear").addEventListener("click", function () {
+            state.q = "";
+            document.getElementById("q").value = "";
+            document.getElementById("q").focus();
+            render();
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                state.q = "";
+                document.getElementById("q").value = "";
+                render();
+            }
+        });
+        (function () {
+            var saved = localStorage.getItem("theme");
+            var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (saved === "dark" || (!saved && dark)) document.documentElement.setAttribute("data-theme", "dark");
+        })();
+        function toggleTheme() {
+            var cur = document.documentElement.getAttribute("data-theme");
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        }
+        render();
+    </script>
+</body>
+</html>
