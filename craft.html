@@ -90,8 +90,9 @@
             padding: 14px 14px 10px;
             margin-top: 10px;
         }
-        .step h2 { margin: 0 0 10px; font-size: 1.05rem; }
-        .step h2 .lv { color: var(--muted); font-weight: 600; margin-right: 8px; }
+        .step h2 { margin: 0 0 10px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+        .step h2 .lv { color: var(--muted); font-weight: 600; }
+        .icon { width: 32px; height: 32px; image-rendering: pixelated; flex: 0 0 auto; }
         .mat { padding: 8px 0; border-top: 1px solid var(--line); }
         .mat-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
         .mat-name { font-weight: 700; }
@@ -152,10 +153,11 @@
         <p class="summary" id="summary"></p>
         <div id="view"></div>
         <footer>
-            配方整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E9%80%B2%E9%9A%8E%E5%B7%A5%E4%BD%9C&amp;ss=24438" target="_blank" rel="noopener">進階工作</a>〉，原文整理自敗家一族、Yuki。地圖對自<a href="https://fairyland-info.vercel.app/pet" target="_blank" rel="noopener">幻獸樂園的寵物頁</a>。表上的神祕石原石、蔓陀蘿根、路娜晶石原石，掉落寫法不同，已照寵物頁對上。要看完整版，請到原文。
+            配方整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E9%80%B2%E9%9A%8E%E5%B7%A5%E4%BD%9C&amp;ss=24438" target="_blank" rel="noopener">進階工作</a>〉，原文整理自敗家一族、Yuki。圖片整理自〈<a href="https://fairyland.lager.com.tw/41_work_skill/work/1_produce.htm" target="_blank" rel="noopener">我要工作賺錢</a>〉。地圖對自<a href="https://fairyland-info.vercel.app/pet" target="_blank" rel="noopener">幻獸樂園的寵物頁</a>。表上的神祕石原石、蔓陀蘿根、路娜晶石原石，掉落寫法不同，已照寵物頁對上。要看完整版，請到原文。
         </footer>
     </div>
     <script src="craft-data.js"></script>
+    <script src="work-images.js"></script>
     <script>
         var state = { id: "wine", q: "" };
 
@@ -187,6 +189,17 @@
         }
         function rangeText(map) {
             return map.lo === map.hi ? String(map.lo) : map.lo + "–" + map.hi;
+        }
+        function icon(name) {
+            var src = window.WORK_IMG && window.WORK_IMG[name];
+            if (!src || !/^work\/[a-z0-9/_-]+\.gif$/.test(src)) return null;
+            var img = document.createElement("img");
+            img.className = "icon";
+            img.alt = "";
+            img.width = 32;
+            img.height = 32;
+            img.src = src;
+            return img;
         }
         function mark(text, q) {
             var node = el("span", q && fold(text).indexOf(q) !== -1 ? "hit" : "", text);
@@ -236,11 +249,15 @@
                 var block = el("section", "step");
                 var title = el("h2");
                 title.appendChild(el("span", "lv", row.lv + "等"));
+                var productIcon = icon(row.name);
+                if (productIcon) title.appendChild(productIcon);
                 title.appendChild(mark(row.name, q));
                 block.appendChild(title);
                 row.mats.forEach(function (mat) {
                     var line = el("div", "mat");
                     var head = el("div", "mat-head");
+                    var matIcon = icon(mat.name);
+                    if (matIcon) head.appendChild(matIcon);
                     head.appendChild(mark(mat.name, q));
                     head.appendChild(el("span", "qty", "× " + mat.n));
                     if (mat.made) {
