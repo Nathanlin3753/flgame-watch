@@ -75,39 +75,26 @@
         }
         .search input:focus { outline: 2px solid var(--accent); border-color: transparent; }
         .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-        .chip, .book {
+        .chip {
             font: inherit;
             cursor: pointer;
             color: var(--ink);
             background: var(--panel);
             border: 1px solid var(--line);
-        }
-        .chip {
             border-radius: 999px;
             padding: 7px 12px;
             font-size: 0.84rem;
         }
-        .chip[aria-pressed="true"], .book[aria-pressed="true"] {
+        .chip[aria-pressed="true"] {
             background: var(--accent);
             border-color: var(--accent);
             color: white;
         }
-        .books {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 10px;
-            margin-top: 8px;
-        }
-        .book {
-            text-align: left;
-            border-radius: 16px;
-            padding: 16px;
-        }
-        .book b { display: block; font-size: 1.02rem; }
-        .book span { color: var(--muted); font-size: 0.82rem; }
-        .book[aria-pressed="true"] span { color: inherit; }
         .summary { margin: 14px 0 8px; color: var(--muted); font-size: 0.88rem; }
-        .list { display: flex; flex-direction: column; gap: 8px; }
+        .album { margin-top: 22px; }
+        .album h2 { margin: 0 0 8px; font-size: 1.05rem; }
+        .album h2 span { margin-left: 8px; color: var(--muted); font-weight: 600; font-size: 0.82rem; }
+        .list { display: grid; grid-template-columns: 1fr; gap: 8px; }
         .card {
             background: var(--panel);
             border: 1px solid var(--line);
@@ -160,6 +147,10 @@
             font-size: 0.82rem;
         }
         footer a { color: var(--accent); }
+        @media (min-width: 760px) {
+            .wrap { max-width: 980px; }
+            .list { grid-template-columns: 1fr 1fr; }
+        }
         @media (max-width: 640px) {
             .pills { margin-left: 0; width: 100%; }
         }
@@ -173,7 +164,7 @@
                 <button class="theme" type="button" onclick="toggleTheme()">主題</button>
             </div>
             <h1>家卡</h1>
-            <p class="lead">一級沒有集卡冊。點一本看裡面有哪些卡，或打卡名、編號、地圖。</p>
+            <p class="lead">一級沒有集卡冊。八本都打開了，點上面一本可以只看那本，也能打卡名、編號、地圖。</p>
             <div class="search">
                 <input id="q" type="search" placeholder="例如 毒骷髏、048、鼠洞" autocomplete="off" enterkeyhint="search">
                 <button class="ghost" id="clear" type="button" hidden>清除</button>
@@ -337,11 +328,6 @@
             }
             return "";
         }
-        function countIn(lv) {
-            var n = 0;
-            cards.forEach(function (c) { if (c.lv.indexOf(lv) !== -1) n++; });
-            return n;
-        }
         function fold(s) {
             return String(s || "").toLowerCase().replace(/\s+/g, "").replace(/祕/g, "密").replace(/秘/g, "密");
         }
@@ -381,22 +367,7 @@
             });
         }
 
-        function renderBooks() {
-            var view = document.getElementById("view");
-            var grid = el("div", "books");
-            albums.forEach(function (a) {
-                var b = el("button", "book");
-                b.type = "button";
-                b.appendChild(el("b", "", a.lv + " " + a.name));
-                b.appendChild(el("span", "", countIn(a.lv) + " 張"));
-                b.onclick = function () { state.lv = a.lv; render(); };
-                grid.appendChild(b);
-            });
-            view.appendChild(grid);
-        }
-
-        function renderList(list) {
-            var view = document.getElementById("view");
+        function renderList(parent, list, albumLv) {
             var box = el("div", "list");
             list.forEach(function (card) {
                 var row = el("article", "card");
@@ -404,7 +375,7 @@
                 head.appendChild(el("span", "num", card.id));
                 head.appendChild(el("span", "name", card.name));
                 var pills = el("div", "pills");
-                var pillLevels = state.lv ? card.lv.filter(function (lv) { return lv !== state.lv; }) : card.lv;
+                var pillLevels = albumLv ? card.lv.filter(function (lv) { return lv !== albumLv; }) : card.lv;
                 pillLevels.forEach(function (lv) {
                     var p = el("button", "pill", lv + " " + albumName(lv));
                     p.type = "button";
@@ -425,7 +396,22 @@
                 row.appendChild(places);
                 box.appendChild(row);
             });
-            view.appendChild(box);
+            parent.appendChild(box);
+        }
+
+        function renderAlbums(list) {
+            var view = document.getElementById("view");
+            albums.forEach(function (a) {
+                var group = list.filter(function (c) { return c.lv.indexOf(a.lv) !== -1; });
+                group.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
+                if (!group.length) return;
+                var section = el("section", "album");
+                var title = el("h2", "", a.lv + " " + a.name);
+                title.appendChild(el("span", "", group.length + " 張"));
+                section.appendChild(title);
+                renderList(section, group, a.lv);
+                view.appendChild(section);
+            });
         }
 
         function render() {
@@ -450,8 +436,8 @@
             shown.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
 
             if (!q && !state.lv) {
-                summary.textContent = "先選一本，或直接搜尋。";
-                renderBooks();
+                summary.textContent = "8 本都打開了，共 " + cards.length + " 張。點上面一本可以只看那本。";
+                renderAlbums(cards);
                 return;
             }
 
@@ -476,7 +462,7 @@
 
             var title = state.lv ? (state.lv + " " + albumName(state.lv) + " · " + shown.length + " 張") : ("找到 " + shown.length + " 張");
             summary.textContent = title;
-            renderList(shown);
+            renderList(view, shown, state.lv);
         }
 
         document.getElementById("q").addEventListener("input", function (e) {
