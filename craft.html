@@ -92,6 +92,7 @@
         }
         .step h2 { margin: 0 0 10px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
         .step h2 .lv { color: var(--muted); font-weight: 600; }
+        .step h2 .fx { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
         .icon { width: 32px; height: 32px; image-rendering: pixelated; flex: 0 0 auto; }
         .mat { padding: 8px 0; border-top: 1px solid var(--line); }
         .mat-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -153,10 +154,11 @@
         <p class="summary" id="summary"></p>
         <div id="view"></div>
         <footer>
-            配方整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E9%80%B2%E9%9A%8E%E5%B7%A5%E4%BD%9C&amp;ss=24438" target="_blank" rel="noopener">進階工作</a>〉，原文整理自敗家一族、Yuki。圖片整理自〈<a href="https://fairyland.lager.com.tw/41_work_skill/work/1_produce.htm" target="_blank" rel="noopener">我要工作賺錢</a>〉。地圖對自<a href="https://fairyland-info.vercel.app/pet" target="_blank" rel="noopener">幻獸樂園的寵物頁</a>。表上的神祕石原石、蔓陀蘿根、路娜晶石原石，掉落寫法不同，已照寵物頁對上。要看完整版，請到原文。
+            配方整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E9%80%B2%E9%9A%8E%E5%B7%A5%E4%BD%9C&amp;ss=24438" target="_blank" rel="noopener">進階工作</a>〉，原文整理自敗家一族、Yuki。調配和烹飪的功效整理自巴哈姆特精華區〈<a href="https://forum.gamer.com.tw/G2.php?bsn=4211&amp;sn=1169" target="_blank" rel="noopener">調配產物</a>〉、〈<a href="https://forum.gamer.com.tw/G2.php?bsn=4211&amp;sn=1170" target="_blank" rel="noopener">烹飪產物</a>〉，原文作者 hyulan。圖片整理自〈<a href="https://fairyland.lager.com.tw/41_work_skill/work/1_produce.htm" target="_blank" rel="noopener">我要工作賺錢</a>〉。地圖對自<a href="https://fairyland-info.vercel.app/pet" target="_blank" rel="noopener">幻獸樂園的寵物頁</a>。表上的神祕石原石、蔓陀蘿根、路娜晶石原石，掉落寫法不同，已照寵物頁對上。要看完整版，請到原文。
         </footer>
     </div>
     <script src="craft-data.js"></script>
+    <script src="craft-effects.js"></script>
     <script src="work-images.js"></script>
     <script>
         var state = { id: "wine", q: "" };
@@ -252,6 +254,8 @@
                 var productIcon = icon(row.name);
                 if (productIcon) title.appendChild(productIcon);
                 title.appendChild(mark(row.name, q));
+                var fx = window.CRAFT_FX[skill.name] && window.CRAFT_FX[skill.name][row.name];
+                if (fx) title.appendChild(el("span", "fx", fx));
                 block.appendChild(title);
                 row.mats.forEach(function (mat) {
                     var line = el("div", "mat");
