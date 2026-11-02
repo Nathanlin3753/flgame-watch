@@ -191,7 +191,7 @@
         <p class="summary" id="summary"></p>
         <div id="view"></div>
         <footer>
-            本頁整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E5%AE%B6%E5%8D%A1%E8%B3%87%E8%A8%8A&amp;ss=24438" target="_blank" rel="noopener">家卡資訊</a>〉。怪物圖片整理自〈<a href="https://dsps.case.eorz.net/htm/allgif/image.htm" target="_blank" rel="noopener">幻獸圖鑑</a>〉。要看完整版，請到原文。
+            本頁整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E5%AE%B6%E5%8D%A1%E8%B3%87%E8%A8%8A&amp;ss=24438" target="_blank" rel="noopener">家卡資訊</a>〉。怪物圖片整理自〈<a href="http://dsps.case.eorz.net/" target="_blank" rel="noopener">敗家一族</a>〉〈<a href="https://dsps.case.eorz.net/htm/allgif/image.htm" target="_blank" rel="noopener">幻獸圖鑑</a>〉。要看完整版，請到原文。
         </footer>
     </div>
     <script src="card-drops.js"></script>
@@ -376,11 +376,9 @@
         }
         function showTip(anchor, place) {
             hideTip();
-            var key = fold(place).replace(/[（(][^）)]*[）)]/g, "")
-                .replace(/b\d+$/i, "")
-                .replace(/史萊姆洞窟/g, "史來姆迷宮3")
-                .replace(/彩虹城地下迷宮/g, "彩虹城外")
-                .replace(/祕密平原/g, "秘密平原");
+            var key = fold(place).replace(/[（(][^）)]*[）)]/g, "");
+            if (/^史萊姆洞窟(?:b\d+)?$/.test(key)) key = "史來姆迷宮3";
+            else if (/^彩虹城地下迷宮(?:b\d+)?$/.test(key)) key = "彩虹城外";
             var map = (window.CARD_DROPS || []).filter(function (m) { return fold(m.name) === key; })[0];
             tip = el("div", "tip");
             tip.appendChild(el("b", "", place));
@@ -424,12 +422,14 @@
             list.forEach(function (card) {
                 var row = el("article", "card");
                 var head = el("div", "card-head");
-                var pic = document.createElement("img");
-                pic.className = "card-pic";
-                pic.alt = "";
-                pic.src = "cards/" + card.id + ".gif";
-                pic.onerror = function () { pic.remove(); };
-                head.appendChild(pic);
+                if (/^\d+$/.test(String(card.id))) {
+                    var pic = document.createElement("img");
+                    pic.className = "card-pic";
+                    pic.alt = "";
+                    pic.src = "cards/" + card.id + ".gif";
+                    pic.onerror = function () { pic.remove(); };
+                    head.appendChild(pic);
+                }
                 head.appendChild(el("span", "num", card.id));
                 head.appendChild(el("span", "name", card.name));
                 var pills = el("div", "pills");
