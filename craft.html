@@ -254,7 +254,7 @@
                 var productIcon = icon(row.name);
                 if (productIcon) title.appendChild(productIcon);
                 title.appendChild(mark(row.name, q));
-                var fx = window.CRAFT_FX[skill.name] && window.CRAFT_FX[skill.name][row.name];
+                var fx = window.CRAFT_FX && window.CRAFT_FX[skill.name] && window.CRAFT_FX[skill.name][row.name];
                 if (fx) title.appendChild(el("span", "fx", fx));
                 block.appendChild(title);
                 row.mats.forEach(function (mat) {
