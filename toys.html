@@ -43,7 +43,19 @@
             background: var(--bg);
             padding-bottom: 10px;
         }
-        .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+        .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+        .pages { display: flex; gap: 6px; }
+        .pages a {
+            font: inherit;
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 7px 12px;
+        }
+        .pages a[aria-current="page"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
         a.back, button.theme, button.ghost {
             font: inherit;
             border: 1px solid var(--line);
@@ -198,6 +210,12 @@
         <div class="sticky">
             <div class="top">
                 <a class="back" href="index.html">回商場</a>
+                <nav class="pages" aria-label="資料頁">
+                    <a href="cards.html">家卡</a>
+                    <a href="toys.html" aria-current="page">玩具</a>
+                    <a href="drops.html">掉寶</a>
+                    <a href="craft.html">進階工作</a>
+                </nav>
                 <button class="theme" type="button" onclick="toggleTheme()">主題</button>
             </div>
             <h1>玩具</h1>
