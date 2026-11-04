@@ -220,7 +220,7 @@
                 <button class="theme" type="button" onclick="toggleTheme()">主題</button>
             </div>
             <h1>玩具</h1>
-            <p class="lead">同一條升級放在一起，由低到高。打玩具名、基底、娃娃、材料或地圖。</p>
+            <p class="lead">同一條升級放在一起，由低到高。打玩具名、基底、娃娃、材料或地圖。娃娃後面的數字是加工要的數量。</p>
             <div class="search">
                 <input id="q" type="search" placeholder="例如 木馬、鱷魚皮、空中宮殿" autocomplete="off" enterkeyhint="search">
                 <button class="ghost" id="clear" type="button" hidden>清除</button>
@@ -246,7 +246,7 @@
         </div>
         <div class="list" id="view"></div>
         <footer>
-            本頁整理自〈<a href="http://dsps.case.eorz.net/" target="_blank" rel="noopener">敗家一族</a>〉、〈<a href="https://chi-hsin.github.io/petFairy/" target="_blank" rel="noopener">幻獸樂園</a>〉。要看完整版，請到原文。
+            本頁整理自〈<a href="http://dsps.case.eorz.net/" target="_blank" rel="noopener">敗家一族</a>〉、〈<a href="https://chi-hsin.github.io/petFairy/" target="_blank" rel="noopener">幻獸樂園</a>〉。娃娃數量整理自巴哈姆特攻略百科〈<a href="https://wiki2.gamer.com.tw/wiki.php?n=4707:%E5%AF%B5%E7%89%A9%E7%8E%A9%E5%85%B7&amp;ss=4707&amp;f=M" target="_blank" rel="noopener">寵物玩具</a>〉。要看完整版，請到原文。
         </footer>
     </div>
     <script src="toys-data.js"></script>
@@ -354,7 +354,14 @@
             base.appendChild(document.createTextNode(t.base || ""));
             row.appendChild(base);
 
-            row.appendChild(labeled("doll", "娃娃", t.doll || ""));
+            var doll = document.createDocumentFragment();
+            doll.appendChild(document.createTextNode(t.doll || ""));
+            var dollN = Number(t.cap) / 5;
+            if (t.doll && dollN > 0 && dollN === Math.floor(dollN)) {
+                doll.appendChild(document.createTextNode(" "));
+                doll.appendChild(el("span", "qty", String(dollN)));
+            }
+            row.appendChild(labeled("doll", "娃娃", doll));
             row.appendChild(labeled("cap", "能力上限", String(t.cap)));
 
             var mats = el("div", "mats");
