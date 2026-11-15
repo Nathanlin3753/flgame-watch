@@ -94,18 +94,43 @@
         th, td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid var(--line); }
         th { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
         td.n { width: 2.2rem; color: var(--muted); }
-        .one { font-size: 1.35rem; font-weight: 700; }
+        .one, .done-n { font-size: 1.35rem; font-weight: 700; }
         .sub { display: block; margin-top: 2px; color: var(--muted); font-size: 0.78rem; }
         .warn { color: var(--accent); }
+        td.when { white-space: nowrap; }
+        .when .lvl { display: block; font-weight: 650; }
         .ops { white-space: nowrap; }
         .ops button, .start .ghost { padding: 4px 8px; }
         .bar { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
         .library { margin-top: 18px; }
         .library h2 { margin: 0 0 8px; font-size: 1rem; }
         .note { color: var(--muted); font-size: 0.82rem; }
-        .road { display: flex; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--line); }
-        .road .open { font: inherit; font-weight: 650; background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; }
-        .road .sum { flex: 1; color: var(--muted); font-size: 0.82rem; }
+        .road {
+            margin-top: 10px;
+            padding: 12px 14px;
+            background: var(--bg);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+        }
+        .road .head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+        .road .open { font: inherit; font-weight: 700; font-size: 1rem; background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; }
+        .road .meta { margin: 2px 0 8px; color: var(--muted); font-size: 0.82rem; }
+        .steps { display: flex; flex-wrap: wrap; gap: 8px; }
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 5px 10px;
+            font-size: 0.82rem;
+        }
+        .chip .idx { color: var(--muted); font-size: 0.75rem; }
+        .chip .drink { font-weight: 700; }
+        .chip .arrow { color: var(--muted); }
+        .chip b { font-weight: 700; }
         details { margin-top: 16px; color: var(--muted); font-size: 0.88rem; }
         details summary { cursor: pointer; color: var(--ink); }
         .ratios { margin: 8px 0 0; padding: 0; list-style: none; }
@@ -170,6 +195,11 @@
             <ul class="ratios" id="ratios"></ul>
             <p>每一段除法都先捨去小數，再相加。其他素質的算法不列在這裡。</p>
         </details>
+        <div class="library">
+            <h2>預設路線</h2>
+            <p class="hint">每等成長 3.8。點名字可以叫到上面的表。這幾條每人打開都有。</p>
+            <div id="presets"></div>
+        </div>
         <p class="foot">紅玉髓是力量，藍玉髓是敏捷，綠玉髓是體質，神秘石是智慧，黃玉髓是幸運，青玉髓是魅力。選了哪顆，這一項的算法一樣。整理自巴哈姆特精華區〈<a href="https://forum.gamer.com.tw/G2.php?bsn=4211&amp;sn=1418" target="_blank" rel="noopener">寵物降級與融合公式</a>〉，樓主 womi。可樂、香檳、開水、雞精、蔘湯整理自 bluesky15 的補充。</p>
     </div>
     <script>
@@ -193,6 +223,24 @@
                 { item: "coffee", to: "", growth: "" }
             ]
         };
+        function route(level, stat, pairs) {
+            return {
+                level: String(level),
+                stat: String(stat),
+                growth: "3.8",
+                steps: pairs.map(function (pair) {
+                    return { item: pair[0], to: String(pair[1]), growth: "" };
+                })
+            };
+        }
+        var PRESETS = [
+            { name: "小黑1", path: route(80, 300, [["coffee", 72], ["cola", 93], ["champagne", 92], ["water", 92], ["water", 100], ["essence", 100]]) },
+            { name: "黑菇推薦5", path: route(83, 289, [["champagne", 100], ["water", 100], ["water", 100], ["essence", 100]]) },
+            { name: "黑菇推薦4", path: route(83, 289, [["champagne", 90], ["water", 100], ["water", 100], ["essence", 100]]) },
+            { name: "黑菇推薦3", path: route(90, 316, [["champagne", 90], ["water", 100], ["water", 100], ["essence", 100]]) },
+            { name: "黑菇推薦2", path: route(80, 278, [["cola", 90], ["champagne", 100], ["water", 100], ["water", 100], ["essence", 100]]) },
+            { name: "黑菇推薦1", path: route(80, 278, [["cola", 90], ["champagne", 90], ["water", 100], ["water", 100], ["essence", 100]]) }
+        ];
         var state = load();
 
         function itemById(id) {
@@ -284,11 +332,11 @@
                     row.formula = "（" + plain(used) + shareText(item) + "）＋（" + levelUsed + shareText(item) + "）＋" + item.add + "＝" + fromStat + "＋" + fromLevel + "＋" + item.add;
                     if (levelUsed !== cursorLevel) {
                         var missed = cut(cursorLevel, item.num, item.den) - fromLevel;
-                        row.capNote = "開水超過 92 等，等級那段停在 92，少 " + missed + " 點";
+                        row.capNote = "等級用 92，少 " + missed + " 點。";
                         if (cursorOne != null && cursorGrowth) {
                             var stat92 = cursorOne * cursorGrowth.scale + 91 * cursorGrowth.num;
                             var one92 = cut(Math.floor(stat92 / cursorGrowth.scale), item.num, item.den) + fromLevel + item.add;
-                            row.at92 = "若 92 等就降，1 等是 " + one92 + "。多練到 " + cursorLevel + " 等，1 等是 " + row.one + "。";
+                            row.capNote += "若 92 等就降，1 等是 " + one92 + "。";
                         }
                     }
                 }
@@ -302,7 +350,6 @@
                     row.raised = num / growth.scale;
                     row.raisedText = formatRational(num, growth.scale);
                     row.growText = row.one + "＋" + levels + "×" + growth.text + "＝" + row.raisedText;
-                    row.usedDefault = !!own.empty;
                     cursorOne = row.one;
                     cursorGrowth = growth;
                     cursorLevel = row.to.n;
@@ -363,8 +410,8 @@
             host.textContent = "";
             var last = null;
             view.rows.forEach(function (row, i) { if (row.ready) last = { row: row, i: i }; });
-            host.appendChild(el("div", "k", "這條路目前降完"));
             if (!last) {
+                host.appendChild(el("div", "k", "這條路養到這裡"));
                 host.appendChild(el("div", "v", "—"));
                 var why = "填現在的等級和素質。";
                 if (view.level.bad && view.stat.bad) why = "等級填 1 以上的整數，素質填 0 以上的數字。";
@@ -373,10 +420,17 @@
                 host.appendChild(el("div", "more", why));
                 return;
             }
+            if (last.row.raisedText) {
+                host.appendChild(el("div", "k", "這條路養到這裡"));
+                host.appendChild(el("div", "v", last.row.to.n + " 等 · 素質 " + last.row.raisedText));
+                host.appendChild(el("div", "more", "第 " + (last.i + 1) + " 次 " + last.row.item.name + "，降成 1 等素質 " + last.row.one + "。"));
+                return;
+            }
+            host.appendChild(el("div", "k", "這次降成"));
             host.appendChild(el("div", "v", "1 等素質 " + last.row.one));
             var more = "第 " + (last.i + 1) + " 次，" + last.row.item.name + "。";
-            if (last.row.raisedText) more += "養到 " + last.row.to.n + " 等是 " + last.row.raisedText + "。";
-            else if (last.i < view.rows.length - 1) more += "下一列還接不上。";
+            if (last.row.needGrowth || last.row.growthBad) more += "填每等成長，才知道養完多少。";
+            else if (last.row.needTo || last.row.toBad) more += "填養到幾等，才知道養完多少。";
             host.appendChild(el("div", "more", more));
         }
         function paintRows(view) {
@@ -388,8 +442,10 @@
                 var when = el("td");
                 if (row.wait) when.appendChild(el("span", "", "上一列還沒養完"));
                 else if (row.ready) {
-                    var shown = row.stat === row.used ? plain(row.stat) : plain(row.stat) + "，用 " + row.used;
-                    when.appendChild(el("span", "", row.level + " 等 · " + shown));
+                    when.className = "when";
+                    when.appendChild(el("span", "lvl", row.level + " 等"));
+                    when.appendChild(el("span", "sub", "素質 " + plain(row.stat)));
+                    if (row.stat !== row.used) when.appendChild(el("span", "sub", "降等用 " + row.used));
                 }
                 tr.appendChild(when);
                 tr.appendChild(itemCell(i));
@@ -398,15 +454,14 @@
                     one.appendChild(el("span", "one", String(row.one)));
                     one.appendChild(el("span", "sub", row.formula));
                     if (row.capNote) one.appendChild(el("span", "sub warn", row.capNote));
-                    if (row.at92) one.appendChild(el("span", "sub", row.at92));
                 } else one.appendChild(el("span", "sub", "—"));
                 tr.appendChild(one);
                 tr.appendChild(inputCell(i, "to", state.steps[i].to, row.toBad, "例如 88"));
                 tr.appendChild(inputCell(i, "growth", state.steps[i].growth, row.growthBad, state.growth.trim() ? "預設 " + state.growth.trim() : "例如 3"));
                 var done = el("td");
                 if (row.raisedText) {
-                    done.appendChild(el("span", "", row.raisedText));
-                    done.appendChild(el("span", "sub", row.growText + (row.usedDefault ? "（用預設）" : "")));
+                    done.appendChild(el("span", "done-n", row.raisedText));
+                    done.appendChild(el("span", "sub", row.growText));
                 } else if (row.needTo) done.appendChild(el("span", "sub", "填養到幾等"));
                 else if (row.needGrowth || row.growthBad) done.appendChild(el("span", "sub", "填每等成長"));
                 else done.appendChild(el("span", "sub", "—"));
@@ -508,14 +563,89 @@
         function writeLibrary(rows) {
             localStorage.setItem("delevel-saved", JSON.stringify(rows.slice(0, 40)));
         }
-        function brief(path) {
-            var bits = [];
-            if (path.level || path.stat) bits.push((path.level || "?") + "等 " + (path.stat || "?"));
+        function usableGrowth(text) {
+            var growth = readGrowth(text);
+            if (growth.n == null || growth.bad || growth.partial) return null;
+            return growth;
+        }
+        function outline(path) {
+            var level = readLevel(path.level);
+            var stat = readStat(path.stat);
+            var fallback = usableGrowth(path.growth);
+            var out = { start: (path.level || "?") + "等", stat: path.stat || "?", growth: fallback ? fallback.text : "", steps: [] };
+            if (!level.n || stat.n == null) {
+                path.steps.forEach(function (step) {
+                    out.steps.push({ item: itemById(step.item).name, one: "", to: step.to || "", raised: "" });
+                });
+                return out;
+            }
+            out.start = level.n + "等";
+            out.stat = plain(stat.n);
+            var cursorLevel = level.n;
+            var cursorStat = stat.n;
+            var alive = true;
             path.steps.forEach(function (step) {
-                var name = itemById(step.item).name;
-                bits.push(step.to ? name + "到" + step.to : name);
+                var item = itemById(step.item);
+                if (!alive) {
+                    out.steps.push({ item: item.name, one: "", to: step.to || "", raised: "" });
+                    return;
+                }
+                var used = Math.floor(cursorStat);
+                var levelUsed = item.id === "water" && cursorLevel > 92 ? 92 : cursorLevel;
+                var one = cut(used, item.num, item.den) + cut(levelUsed, item.num, item.den) + item.add;
+                var growth = usableGrowth(step.growth) || fallback;
+                var to = readLevel(step.to);
+                if (!to.n || !growth) {
+                    out.steps.push({ item: item.name, one: String(one), to: "", raised: "" });
+                    alive = false;
+                    return;
+                }
+                var num = one * growth.scale + (to.n - 1) * growth.num;
+                out.steps.push({ item: item.name, one: String(one), to: String(to.n), raised: formatRational(num, growth.scale) });
+                cursorLevel = to.n;
+                cursorStat = num / growth.scale;
             });
-            return bits.join(" · ");
+            return out;
+        }
+        function paintCard(host, row, allowDelete) {
+            var info = outline(row.path);
+            var line = el("div", "road");
+            var head = el("div", "head");
+            var open = el("button", "open", row.name);
+            open.type = "button";
+            open.addEventListener("click", function () { openPath(row.path, row.name); });
+            head.appendChild(open);
+            if (allowDelete) {
+                var drop = el("button", "ghost", "刪掉");
+                drop.type = "button";
+                drop.addEventListener("click", function () {
+                    writeLibrary(readLibrary().filter(function (item) { return item.id !== row.id; }));
+                    document.getElementById("keep-note").textContent = "已刪掉「" + row.name + "」。";
+                    paintLibrary();
+                });
+                head.appendChild(drop);
+            }
+            line.appendChild(head);
+            var meta = info.start + " · 素質 " + info.stat;
+            if (info.growth) meta += " · 每等 " + info.growth;
+            line.appendChild(el("div", "meta", meta));
+            var steps = el("div", "steps");
+            info.steps.forEach(function (step, i) {
+                var chip = el("span", "chip");
+                chip.appendChild(el("span", "idx", String(i + 1)));
+                chip.appendChild(el("span", "drink", step.item));
+                if (step.one) chip.appendChild(el("span", "", "1等 " + step.one));
+                if (step.to && step.raised) {
+                    chip.appendChild(el("span", "arrow", "→"));
+                    chip.appendChild(el("b", "", step.to + "等 素質" + step.raised));
+                } else if (step.to) {
+                    chip.appendChild(el("span", "arrow", "→"));
+                    chip.appendChild(el("span", "", step.to + "等"));
+                }
+                steps.appendChild(chip);
+            });
+            line.appendChild(steps);
+            host.appendChild(line);
         }
         function paintLibrary() {
             var host = document.getElementById("kept");
@@ -525,28 +655,18 @@
                 host.appendChild(el("p", "hint", "還沒有最愛練等路線。"));
                 return;
             }
-            rows.forEach(function (row) {
-                var line = el("div", "road");
-                var open = el("button", "open", row.name);
-                open.type = "button";
-                open.addEventListener("click", function () {
-                    state = clone(row.path);
-                    document.getElementById("path-name").value = row.name;
-                    document.getElementById("keep-note").textContent = "已叫出「" + row.name + "」。";
-                    render();
-                });
-                line.appendChild(open);
-                line.appendChild(el("span", "sum", brief(row.path)));
-                var drop = el("button", "ghost", "刪掉");
-                drop.type = "button";
-                drop.addEventListener("click", function () {
-                    writeLibrary(readLibrary().filter(function (item) { return item.id !== row.id; }));
-                    document.getElementById("keep-note").textContent = "已刪掉「" + row.name + "」。";
-                    paintLibrary();
-                });
-                line.appendChild(drop);
-                host.appendChild(line);
-            });
+            rows.forEach(function (row) { paintCard(host, row, true); });
+        }
+        function openPath(path, name) {
+            state = clone(path);
+            document.getElementById("path-name").value = name;
+            document.getElementById("keep-note").textContent = "已叫出「" + name + "」。";
+            render();
+        }
+        function paintPresets() {
+            var host = document.getElementById("presets");
+            host.textContent = "";
+            PRESETS.forEach(function (row) { paintCard(host, row, false); });
         }
         function nextFavoriteName(rows) {
             var n = 0;
@@ -627,10 +747,11 @@
             }
         });
         paintLibrary();
+        paintPresets();
         var list = document.getElementById("ratios");
         ITEMS.forEach(function (item) {
             var line = item.name + "　（素質" + shareText(item) + "）＋（等級" + shareText(item) + "）＋" + item.add;
-            if (item.id === "water") line += "。超過 92 等，等級那段停在 92。高等難練，平價就降在 92。";
+            if (item.id === "water") line += "。超過 92 等，等級那段停在 92。";
             list.appendChild(el("li", "", line));
         });
         render();
