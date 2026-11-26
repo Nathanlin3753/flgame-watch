@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基礎工作</title>
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --panel: #ffffff;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --accent: #3f6212;
+            --accent-soft: #ecfccb;
+        }
+        [data-theme="dark"] {
+            --bg: #0f172a;
+            --panel: #1e293b;
+            --ink: #f1f5f9;
+            --muted: #94a3b8;
+            --line: #334155;
+            --accent: #bef264;
+            --accent-soft: #365314;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.5;
+        }
+        .wrap { max-width: 980px; margin: 0 auto; padding: 22px 18px 64px; }
+        .sticky {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--bg);
+            padding-bottom: 12px;
+        }
+        .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+        .pages { display: flex; flex-wrap: wrap; gap: 6px; }
+        .pages a {
+            font: inherit;
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 7px 12px;
+        }
+        .pages a[aria-current="page"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+        a.back, button.theme, button.ghost {
+            font: inherit;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            color: var(--ink);
+            border-radius: 999px;
+            padding: 7px 13px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1 { margin: 0; font-size: 1.8rem; letter-spacing: 0.04em; }
+        .lead { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
+        .search { display: flex; gap: 8px; margin-top: 16px; }
+        .search input {
+            flex: 1;
+            font: inherit;
+            font-size: 1rem;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        .search input:focus { outline: 2px solid var(--accent); border-color: transparent; }
+        .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .chip {
+            font: inherit;
+            cursor: pointer;
+            color: var(--ink);
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 7px 12px;
+            font-size: 0.84rem;
+        }
+        .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #f7fee7; }
+        [data-theme="dark"] .chip[aria-pressed="true"] { color: #1a2e05; }
+        .summary { margin: 14px 0 8px; color: var(--muted); font-size: 0.88rem; }
+        .list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 8px 12px;
+        }
+        .icon { width: 32px; height: 32px; image-rendering: pixelated; flex: 0 0 auto; }
+        .name { font-weight: 700; }
+        .meta { color: var(--muted); font-size: 0.84rem; }
+        .empty {
+            background: var(--panel);
+            border: 1px dashed var(--line);
+            border-radius: 14px;
+            padding: 22px 16px;
+            color: var(--muted);
+        }
+        footer {
+            margin-top: 28px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="sticky">
+            <div class="top">
+                <a class="back" href="index.html">回商場</a>
+                <nav class="pages" aria-label="資料頁">
+                    <a href="cards.html">家卡</a>
+                    <a href="toys.html">玩具</a>
+                    <a href="drops.html">掉寶</a>
+                    <a href="basic.html" aria-current="page">基礎工作</a>
+                    <a href="craft.html">進階工作</a>
+                    <a href="pet.html">寵物</a>
+                    <a href="delevel.html">降等</a>
+                </nav>
+                <button class="theme" type="button" onclick="toggleTheme()">主題</button>
+            </div>
+            <h1>基礎工作</h1>
+            <p class="lead">六個原料工作，從低等級排到高。點一個看等級和工具。</p>
+            <div class="search">
+                <input id="q" type="search" placeholder="例如 老薑、十字鎬、偶然出現" autocomplete="off">
+                <button class="ghost" id="clear" type="button" hidden>清除</button>
+            </div>
+            <div class="chips" id="chips"></div>
+        </div>
+        <p class="summary" id="summary"></p>
+        <div id="view"></div>
+        <footer>整理自〈我要工作賺錢〉。</footer>
+    </div>
+    <script src="work-images.js"></script>
+    <script src="basic-data.js"></script>
+    <script>
+        var state = { id: 0, q: "" };
+        function fold(s) {
+            return String(s || "").toLowerCase().replace(/\s+/g, "").replace(/祕/g, "密").replace(/秘/g, "密").replace(/粱/g, "梁").replace(/蘿/g, "羅").replace(/荳/g, "豆").replace(/鋼/g, "剛");
+        }
+        function el(tag, cls, text) {
+            var node = document.createElement(tag);
+            if (cls) node.className = cls;
+            if (text != null) node.textContent = text;
+            return node;
+        }
+        function icon(name) {
+            var src = window.WORK_IMG && window.WORK_IMG[name];
+            if (!src || !/^work\/[a-z0-9/_-]+\.gif$/.test(src)) return null;
+            var img = document.createElement("img");
+            img.className = "icon";
+            img.alt = "";
+            img.width = 32;
+            img.height = 32;
+            img.src = src;
+            return img;
+        }
+        function render() {
+            var data = window.BASIC || [];
+            var chips = document.getElementById("chips");
+            var view = document.getElementById("view");
+            var summary = document.getElementById("summary");
+            chips.textContent = "";
+            view.textContent = "";
+            if (!data.length) {
+                summary.textContent = "";
+                view.appendChild(el("div", "empty", "這份沒有原料。"));
+                return;
+            }
+            if (state.id >= data.length) state.id = 0;
+            data.forEach(function (skill, i) {
+                var b = el("button", "chip", skill.name);
+                b.type = "button";
+                b.setAttribute("aria-pressed", i === state.id ? "true" : "false");
+                b.onclick = function () { state.id = i; render(); };
+                chips.appendChild(b);
+            });
+            var skill = data[state.id];
+            var q = fold(state.q.trim());
+            document.getElementById("clear").hidden = !state.q.trim();
+            var shown = [];
+            data.forEach(function (item, i) {
+                if (!q && i !== state.id) return;
+                item.rows.forEach(function (row) {
+                    if (q && fold(row.name).indexOf(q) === -1 && fold(row.tool).indexOf(q) === -1 && fold(row.note).indexOf(q) === -1 && fold(item.name).indexOf(q) === -1) return;
+                    shown.push({ skill: item.name, row: row });
+                });
+            });
+            summary.textContent = (q ? "搜尋" : skill.name) + " · " + shown.length + " 項";
+            if (!shown.length) {
+                view.appendChild(el("div", "empty", "沒有對到。"));
+                return;
+            }
+            var list = el("div", "list");
+            shown.forEach(function (item) {
+                var row = item.row;
+                var line = el("div", "row");
+                var pic = icon(row.name);
+                if (pic) line.appendChild(pic);
+                var text = el("div");
+                text.appendChild(el("div", "name", row.name));
+                var meta = item.skill + " " + row.lv + " · " + row.tool;
+                if (row.note) meta += " · " + row.note;
+                text.appendChild(el("div", "meta", meta));
+                line.appendChild(text);
+                list.appendChild(line);
+            });
+            view.appendChild(list);
+        }
+        document.getElementById("q").addEventListener("input", function (e) {
+            state.q = e.target.value;
+            render();
+        });
+        document.getElementById("clear").addEventListener("click", function () {
+            state.q = "";
+            document.getElementById("q").value = "";
+            document.getElementById("q").focus();
+            render();
+        });
+        (function () {
+            var saved = localStorage.getItem("theme");
+            var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (saved === "dark" || (!saved && dark)) document.documentElement.setAttribute("data-theme", "dark");
+        })();
+        function toggleTheme() {
+            var cur = document.documentElement.getAttribute("data-theme");
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+        }
+        render();
+    </script>
+</body>
+</html>
